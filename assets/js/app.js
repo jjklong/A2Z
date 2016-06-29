@@ -13,6 +13,12 @@ app.config(function($routeProvider){
     .when('/consumer',{
       templateUrl: 'pages/consumerView.html'
     })
+    .when('/product',{
+      templateUrl: 'pages/cProductView.html'
+    })
+    .when('/checkout',{
+      templateUrl: 'pages/cReceiptView.html'
+    })
     .otherwise({
       redirectTo: '/home'
     });

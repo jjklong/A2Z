@@ -43,10 +43,63 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#container {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em 1em 1em; }
+  #container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
 .adminView {
-  float: left; }
+  font-size: 4em;
+  float: left;
+  width: 50%;
+  background: #333; }
 
 .consumerView {
-  float: right; }
+  font-size: 4em;
+  float: right;
+  width: 50%;
+  background: #000; }
+
+.consumerContainer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  .consumerContainer .sidebar {
+    width: 23.07692%;
+    float: left;
+    margin-right: 2.5641%;
+    margin: 0; }
+  .consumerContainer .consumerGrid {
+    width: 74.35897%;
+    float: left;
+    margin-right: 2.5641%;
+    margin: 0; }
+    .consumerContainer .consumerGrid .itemGrid {
+      width: 23.07692%;
+      float: left;
+      margin-right: 2.5641%;
+      background: lightblue;
+      height: 10em;
+      margin: 1em; }
+    .consumerContainer .consumerGrid .productImage {
+      background: lightblue;
+      width: 35.89744%;
+      float: left;
+      margin-right: 2.5641%; }
+    .consumerContainer .consumerGrid .productDetails {
+      width: 35.89744%;
+      float: left;
+      margin-right: 2.5641%; }
 
 /*# sourceMappingURL=styles.css.map */

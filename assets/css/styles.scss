@@ -1,9 +1,55 @@
 @import '../../bower_components/reset-css/_reset';
 @import "../../bower_components/susy/sass/susy";
 
+$susy: (
+  columns: 8,
+  container: 1120px,
+  gutter: 0,
+  global-box-sizing: border-box
+);
+@include border-box-sizing;
+
+#container{
+  @include container;
+  padding: 3em 1em 1em;
+}
+
+//HOME PAGE    ADMIN || CONSUMER
 .adminView{
+  font-size: 4em;
   float: left;
+  width: 50%;
+  background: #333;
 }
 .consumerView{
+  font-size: 4em;
   float: right;
+  width: 50%;
+  background: #000;
+}
+
+//CONSUMER VIEW PAGE
+.consumerContainer{
+  @include span(8);
+  .sidebar{
+    @include span(2);
+    margin: 0;
+  }
+  .consumerGrid{
+    @include span(6);
+    margin: 0;
+    .itemGrid{
+      @include span(2);
+      background: lightblue;
+      height: 10em;
+      margin: 1em;
+    }
+    .productImage{
+      background: lightblue;
+      @include span(3);
+    }
+    .productDetails{
+      @include span(3);
+    }
+  }
 }

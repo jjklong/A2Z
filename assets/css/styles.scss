@@ -8,10 +8,13 @@ $fa-font-path: "../../bower_components/font-awesome/fonts";
 $teal: #2D7D8F;
 $green: #8DED8E;
 $red: #FA5555;
+$darker-red: #c04242;
 $yellow: #F7FB76;
 $white: #DDDDDD;
 $off-white: #FFEBBC;
 $grey: #C2CFD8;
+$dark-grey: #393E46;
+$black: #222831;
 
 // Fonts:
 $display-font: 'Slabo 27px', serif;
@@ -33,28 +36,32 @@ $susy: (
 }
 
 body{
-  background: $off-white;
+  background: $white;
   font-family: $font;
   color: $teal;
   font-weight: 400;
 }
 
 a{
-  color: $red;
+  color: $teal;
   text-decoration: none;
 }
 a:hover{
-  color: $teal;
+  color: $red;
   text-decoration: none;
 }
 
 //HOME PAGE    ADMIN || CONSUMER
+// .viewsContainer{
+//   background: $off-white;
+// }
 .adminView{
   // font-size: 2em;
   float: left;
   width: 50%;
   height: 600px;
-  background: $off-white;
+  background: $white;
+  margin-top: 70px;
   // padding-top: 50px;
   padding-bottom: 10px;
   font-family: $display-font;
@@ -68,8 +75,9 @@ a:hover{
   float: right;
   width: 50%;
   height: 600px;
+  margin-top: 70px;
   // padding-top: 50px;
-  background: $off-white;
+  background: $white;
   font-family: $display-font;
   letter-spacing: 2px;
   text-align: center;
@@ -87,11 +95,15 @@ a:hover{
   left: 0;
   height: 1000px;
   padding: 5em 1em 1em;
-  background: $red;
+  background: $teal;
+  background: -webkit-linear-gradient(45deg, $teal , $green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(45deg, $teal, $green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, $teal, $green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(45deg, $teal , $green); /* Standard syntax */
   text-align: center;
   #logo{
     font-family: $display-font;
-    color: $yellow;
+    color: $teal;
     font-size: 10em;
     text-align: center;
     letter-spacing: -20px;
@@ -148,13 +160,43 @@ a:hover{
   .categories{
     padding: 2em 0 4em 2.5em;
     font-family: $display-font;
-    color: $white;
     font-size: 2em;
     line-height: 1.5em;
     text-align: left;
-  }
+    // text-transform: uppercase;
+    a{
+      color: #FFF;
+    }
+    a:hover{
+      color: $teal;
+    } }
   .cart{
-    color: $grey;
+    background: $green;
+    border: 2px solid $green;
+    // opacity: 0.5;
+    border-radius: 6px;
+    height: 8em;
+    margin: 0 2em 1em 2em;
+    padding: 2em;
+    color: $teal;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  button{
+    background: $teal;
+    border: 2px solid $teal;
+    border-radius: 20px;
+    margin: 16px 5px 0 80px;
+    padding: 10px;
+    color: $green;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  button:hover{
+    background: $green;
+    border: 2px solid $teal;
+    border-radius: 20px;
+    color: $teal;
   } } }
 
 //CONSUMER VIEW PAGE
@@ -167,20 +209,132 @@ a:hover{
   .consumerGrid{
     @include span(6);
     position: relative;
+    top: 0;
+    left: 160px;
     padding: 5em 3em 1em 20em;
     margin: 0;
     .itemGrid{
       @include span(2);
-      background: $green;
-      height: 10em;
+      background: #FFF;
+      border: 2px solid #FFF;
+      border-radius: 5px;
+      width: 12em;
+      height: 18em;
       margin: 1em;
+      padding: 1em;
+      text-align: center;
+      span{
+        font-family: $display-font;
+        font-size: 10em;
+      }
+        .a{
+          color: #E42F45;
+        }
+        .eight{
+          color: #189dcc;
+        }
+        .f{
+          color: #D5441C;
+        }
+        .three{
+          color: #7ebf35;
+        }
+        .c{
+          color: #35b9bf;
+        }
+        .y{
+          color: #FDEA2E;
+        }
+
+
+      h3{
+        // background: $teal;
+        // margin: 0 5px 0 5px;
+        padding: 4px;
+        color: $teal;
+        letter-spacing: 1px;
+      }
+      h5{
+        // background: $teal;
+        // margin: 0 5px 0 5px;
+        padding-bottom: 8px;
+        font-family: $display-font;
+        color: $teal;
+        // font-style: italic;
+        letter-spacing: 2px;
+      }
+      button{
+        background: $teal;
+        border: 2px solid $teal;
+        border-radius: 20px;
+        // margin: 0 5px 0 5px;
+        padding: 10px;
+        color: #FFF;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      button:hover{
+        background: #FFF;
+        border: 2px solid $teal;
+        border-radius: 20px;
+        color: $teal;
+      }
+      button:focus {
+        outline: 0;
+      }
     }
     .productImage{
-      background: $green;
+      background: #FFF;
+      border: 2px solid #FFF;
+      border-radius: 5px;
+      width: 12em;
+      height: 18em;
+      margin: 1em;
+      padding: 1em;
+      text-align: center;
       @include span(3);
+
+      span{
+        font-family: $display-font;
+        font-size: 16em;
+      }
+        .a{
+          color: #E42F45;
+        }
     }
     .productDetails{
       @include span(3);
+
+      margin-top: 2em;
+      h3{
+        color: $teal;
+        letter-spacing: 1px;
+      }
+      h5{
+        font-family: $display-font;
+        color: $teal;
+        // font-style: italic;
+        letter-spacing: 2px;
+      }
+      button{
+        background: $teal;
+        border: 2px solid $teal;
+        border-radius: 20px;
+        margin-top: 10em;
+        padding: 10px 50px 10px 50px;
+        color: #FFF;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      button:hover{
+        background: $white;
+        border: 2px solid $teal;
+        border-radius: 20px;
+        color: $teal;
+      }
+      button:focus {
+        outline: 0;
+      }
     }
   }
 }

@@ -8,6 +8,15 @@
       "description": "the first letter of the English alphabet, a vowel.",
       "img": "https://image.freepik.com/free-icon/letter-a-logo-inside-a-circle_318-53445.jpg",
       "reviews": []
+    },
+    {
+      "id": 1,
+      "name": "Letter B",
+      "price": "3.99",
+      "qty": "2",
+      "description": "the second letter, first consonant.",
+      "img": "#",
+      "reviews": []
     }
   ],
   "checkout": []

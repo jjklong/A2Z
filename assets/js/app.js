@@ -4,6 +4,7 @@ app.config(function($routeProvider){
   $routeProvider
     .when('/home',{
       templateUrl: 'pages/home.html',
+      controller: 'AzController'
     })
     .when('/admin',{
       templateUrl: 'pages/adminView.html',

@@ -79,7 +79,7 @@
       color: #FFF;
     }
     a:hover{
-      color: $teal;
+      color: $purple;
     } }
   .cart{
     background: $white;
@@ -92,20 +92,4 @@
     color: $purple;
     text-align: left;
     letter-spacing: 1px;
-  }
-  button{
-    background: $purple;
-    border: 2px solid $purple;
-    border-radius: 20px;
-    margin: 16px 5px 0 80px;
-    padding: 10px;
-    color: $white;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  button:hover{
-    background: $white;
-    border: 2px solid $purple;
-    border-radius: 20px;
-    color: $purple;
   } } }

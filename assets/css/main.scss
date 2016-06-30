@@ -8,6 +8,7 @@ $fa-font-path: "../../bower_components/font-awesome/fonts";
 $teal: #2D7D8F;
 $green: #8DED8E;
 $purple: #3a4ed5;
+$blue: #3366B1;
 $red: #FA5555;
 $darker-red: #c04242;
 $yellow: #F7FB76;
@@ -24,7 +25,7 @@ $font: 'Work Sans', sans-serif;  // 400 or 900 weights
 
 // @import "grid";
 
-$susy: ( 
+$susy: (
   columns: 8,
   container: 100%,
   gutter: 0,
@@ -58,8 +59,7 @@ $susy: (
       @include span(3);
     } } }
 
-
-
+@import "partials/buttons";
 @import "partials/sidebar";
 @import "partials/home";
 @import "partials/adminView";

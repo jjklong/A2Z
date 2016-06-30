@@ -29,8 +29,8 @@ a:hover{
     background: #FFF;
     border: 2px solid #FFF;
     border-radius: 5px;
-    width: 12em;
-    height: 18em;
+    width: 13em;
+    // height: 18em;
     margin: 1em;
     padding: 1em;
     text-align: center;
@@ -38,23 +38,24 @@ a:hover{
     span{
       font-family: $display-font;
       font-size: 10em;
+      color: $dark-grey;
     }
-      .a{
+      .a:hover{
         color: #E42F45;
       }
-      .eight{
+      .eight:hover{
         color: #189dcc;
       }
-      .f{
+      .f:hover{
         color: #D5441C;
       }
-      .three{
+      .three:hover{
         color: #7ebf35;
       }
-      .c{
+      .c:hover{
         color: #35b9bf;
       }
-      .y{
+      .y:hover{
         color: #FDEA2E;
       }
 
@@ -73,41 +74,4 @@ a:hover{
       color: $teal;
       // font-style: italic;
       letter-spacing: 2px;
-    }
-    button{
-      background: $purple;
-      border: 2px solid $purple;
-      border-radius: 20px; //20px
-        // border-color: -webkit-linear-gradient(45deg, $teal , $green); /* For Safari 5.1 to 6.0 */
-        // border-color: -o-linear-gradient(45deg, $teal, $green); /* For Opera 11.1 to 12.0 */
-        // border-color: -moz-linear-gradient(45deg, $teal, $green); /* For Firefox 3.6 to 15 */
-        // border-color: linear-gradient(45deg, $teal , $green); /* Standard syntax */
-
-        // border-width: 3px;
-        // border-style: solid;
-        // -webkit-border-image:
-        //   -webkit-gradient(linear, 0 0, 0 100%, from($teal), to(rgba(0, 0, 0, 0))) 1 100%;
-        // -webkit-border-image:
-        //   -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-        // -moz-border-image:
-        //   -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-        // -o-border-image:
-        //   -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-        // border-image:
-        //   linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
-
-        // margin: 0 5px 0 5px;
-      padding: 10px; //10px
-      color: #FFF;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    button:hover{
-      background: #FFF;
-      border: 2px solid $purple;
-      border-radius: 20px;
-      color: $purple;
-    }
-    button:focus {
-      outline: 0;
     } } }

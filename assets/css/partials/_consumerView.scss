@@ -1,0 +1,77 @@
+// @import "partials/sidebar";
+
+
+
+body{
+  background: $white;
+  font-family: $font;
+  color: $teal;
+  font-weight: 400;
+}
+
+a{
+  color: $teal;
+  text-decoration: none;
+}
+a:hover{
+  color: $red;
+  text-decoration: none;
+}
+
+.consumerGrid{
+  position: relative;
+  top: 0;
+  left: 160px;
+  padding: 5em 3em 1em 20em;
+  margin: 0;
+
+  .itemGrid{
+    background: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    width: 13em;
+    // height: 18em;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+
+    span{
+      font-family: $display-font;
+      font-size: 10em;
+      color: $dark-grey;
+    }
+      .a:hover{
+        color: #E42F45;
+      }
+      .eight:hover{
+        color: #189dcc;
+      }
+      .f:hover{
+        color: #D5441C;
+      }
+      .three:hover{
+        color: #7ebf35;
+      }
+      .c:hover{
+        color: #35b9bf;
+      }
+      .y:hover{
+        color: #FDEA2E;
+      }
+
+    h3{
+      // background: $teal;
+      // margin: 0 5px 0 5px;
+      padding: 4px;
+      color: $teal;
+      letter-spacing: 1px;
+    }
+    h5{
+      // background: $teal;
+      // margin: 0 5px 0 5px;
+      padding-bottom: 8px;
+      font-family: $display-font;
+      color: $teal;
+      // font-style: italic;
+      letter-spacing: 2px;
+    } } }

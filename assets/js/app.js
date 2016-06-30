@@ -1,5 +1,4 @@
 //app.js
-
 var app = angular.module('app',['ngRoute']);
 app.config(function($routeProvider){
   $routeProvider
@@ -7,11 +6,12 @@ app.config(function($routeProvider){
       templateUrl: 'pages/home.html',
     })
     .when('/admin',{
-      templateUrl: 'pages/adminView.html'
+      templateUrl: 'pages/adminView.html',
+      controller: 'AzController'
     })
     .when('/consumer',{
       templateUrl: 'pages/consumerView.html',
-      // controller: 'AzController'
+      controller: 'AzController'
     })
     .when('/product',{
       templateUrl: 'pages/cProductView.html'

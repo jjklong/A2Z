@@ -1,9 +1,14 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "products": [
+    {
+      "id": 0,
+      "name": "Letter A",
+      "price": "2.99",
+      "qty": "1",
+      "description": "the first letter of the English alphabet, a vowel.",
+      "img": "https://image.freepik.com/free-icon/letter-a-logo-inside-a-circle_318-53445.jpg",
+      "reviews": []
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "checkout": []
 }

@@ -42,14 +42,14 @@ $susy: (
   @include span(8);
 
   .sidebar{
-    @include span(2);
+    @include span(2 of 8);
     margin: 0;
   }
   .consumerGrid{
-    @include span(6);
+    @include span(6 of 8);
 
     .itemGrid{
-      @include span(2);
+      @include span(2 of 6);
     }
 
     .productImage{
@@ -58,6 +58,34 @@ $susy: (
     .productDetails{
       @include span(3);
     } } }
+
+
+
+    .adminContainer{
+      @include span(8);
+
+      .sidebar{
+        @include span(1 of 8);
+        margin: 0;
+      }
+      .adminGrid{
+        @include span(2 of 8);
+
+        .itemGrid{
+          @include span(1 of 2);
+        }
+
+        // .productImage{
+        //   @include span(2);
+        // }
+        // .productDetails{
+        //   @include span(2);
+        // }
+      }
+    }
+
+
+
 
 
 @import "partials/hamburger-menu";

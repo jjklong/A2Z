@@ -1,0 +1,21 @@
+// @import "partials/sidebar";
+
+
+
+
+
+body{
+  background: $white;
+  font-family: $font;
+  color: $teal;
+  font-weight: 400;
+}
+
+a{
+  color: $teal;
+  text-decoration: none;
+}
+a:hover{
+  color: $red;
+  text-decoration: none;
+}

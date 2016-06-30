@@ -1,0 +1,113 @@
+// @import "partials/sidebar";
+
+
+
+body{
+  background: $white;
+  font-family: $font;
+  color: $teal;
+  font-weight: 400;
+}
+
+a{
+  color: $teal;
+  text-decoration: none;
+}
+a:hover{
+  color: $red;
+  text-decoration: none;
+}
+
+.consumerGrid{
+  position: relative;
+  top: 0;
+  left: 160px;
+  padding: 5em 3em 1em 20em;
+  margin: 0;
+
+  .itemGrid{
+    background: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    width: 12em;
+    height: 18em;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+
+    span{
+      font-family: $display-font;
+      font-size: 10em;
+    }
+      .a{
+        color: #E42F45;
+      }
+      .eight{
+        color: #189dcc;
+      }
+      .f{
+        color: #D5441C;
+      }
+      .three{
+        color: #7ebf35;
+      }
+      .c{
+        color: #35b9bf;
+      }
+      .y{
+        color: #FDEA2E;
+      }
+
+    h3{
+      // background: $teal;
+      // margin: 0 5px 0 5px;
+      padding: 4px;
+      color: $teal;
+      letter-spacing: 1px;
+    }
+    h5{
+      // background: $teal;
+      // margin: 0 5px 0 5px;
+      padding-bottom: 8px;
+      font-family: $display-font;
+      color: $teal;
+      // font-style: italic;
+      letter-spacing: 2px;
+    }
+    button{
+      background: $purple;
+      border: 2px solid $purple;
+      border-radius: 20px; //20px
+        // border-color: -webkit-linear-gradient(45deg, $teal , $green); /* For Safari 5.1 to 6.0 */
+        // border-color: -o-linear-gradient(45deg, $teal, $green); /* For Opera 11.1 to 12.0 */
+        // border-color: -moz-linear-gradient(45deg, $teal, $green); /* For Firefox 3.6 to 15 */
+        // border-color: linear-gradient(45deg, $teal , $green); /* Standard syntax */
+
+        // border-width: 3px;
+        // border-style: solid;
+        // -webkit-border-image:
+        //   -webkit-gradient(linear, 0 0, 0 100%, from($teal), to(rgba(0, 0, 0, 0))) 1 100%;
+        // -webkit-border-image:
+        //   -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+        // -moz-border-image:
+        //   -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+        // -o-border-image:
+        //   -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+        // border-image:
+        //   linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+
+        // margin: 0 5px 0 5px;
+      padding: 10px; //10px
+      color: #FFF;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    button:hover{
+      background: #FFF;
+      border: 2px solid $purple;
+      border-radius: 20px;
+      color: $purple;
+    }
+    button:focus {
+      outline: 0;
+    } } }

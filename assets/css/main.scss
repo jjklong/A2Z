@@ -1,0 +1,68 @@
+@import '../../bower_components/reset-css/_reset';
+@import "../../bower_components/susy/sass/susy";
+@import 'https://fonts.googleapis.com/css?family=Slabo+27px|Work+Sans:400,900';
+$fa-font-path: "../../bower_components/font-awesome/fonts";
+
+
+// Colors:
+$teal: #2D7D8F;
+$green: #8DED8E;
+$purple: #3a4ed5;
+$red: #FA5555;
+$darker-red: #c04242;
+$yellow: #F7FB76;
+$white: #DDDDDD;
+$off-white: #FFEBBC;
+$grey: #C2CFD8;
+$dark-grey: #393E46;
+$black: #222831;
+
+// Fonts:
+$display-font: 'Slabo 27px', serif;
+$font: 'Work Sans', sans-serif;  // 400 or 900 weights
+
+
+// @import "grid";
+
+$susy: ( 
+  columns: 8,
+  container: 100%,
+  gutter: 0,
+  global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+#container{
+  @include container;
+}
+
+.consumerContainer{
+  @include span(8);
+
+  .sidebar{
+    @include span(2);
+    margin: 0;
+  }
+  .consumerGrid{
+    @include span(6);
+
+    .itemGrid{
+      @include span(2);
+    }
+
+    .productImage{
+      @include span(3);
+    }
+    .productDetails{
+      @include span(3);
+    } } }
+
+
+
+@import "partials/sidebar";
+@import "partials/home";
+@import "partials/adminView";
+@import "partials/consumerView";
+@import "partials/cProductView";
+@import "partials/cReceiptView";

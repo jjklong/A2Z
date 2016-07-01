@@ -266,6 +266,84 @@ button:focus {
   border-radius: 20px;
   color: #3366B1; }
 
+* {
+  box-sizing: border-box; }
+
+html, body {
+  min-height: 100%; }
+
+a {
+  text-decoration: none; }
+
+input {
+  text-align: center;
+  width: 100%; }
+
+.main-header {
+  padding: 5px;
+  text-shadow: #222 0px -1px 1px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease; }
+  .main-header a {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 32px; }
+
+.page-wrap {
+  float: right;
+  width: 100%;
+  transition: width 0.3s ease; }
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  padding-top: 8%;
+  background: #2D7D8F;
+  background: linear-gradient(45deg, #3a4ed5, #2D7D8F);
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  box-shadow: inset -7px 0 30px -7px #000; }
+  .main-nav a {
+    display: block;
+    color: white;
+    padding-left: 10%; }
+    .main-nav a:hover, .main-nav a:focus {
+      background: linear-gradient(#484848, #383838); }
+  .main-nav:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 34px;
+    background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.4)); }
+
+.content {
+  padding: 100px 20px 20px 20px; }
+
+.close-menu {
+  display: none;
+  width: 20%; }
+
+#main-nav:target {
+  width: 25%; }
+
+#main-nav:target + .page-wrap {
+  width: 95%; }
+  #main-nav:target + .page-wrap .open-menu {
+    display: none; }
+  #main-nav:target + .page-wrap .close-menu {
+    display: block; }
+  #main-nav:target + .page-wrap .main-header {
+    width: 75%;
+    left: 25%; }
+
 .consumerContainer .sidebar {
   position: fixed;
   top: 0;
@@ -423,6 +501,7 @@ a:hover {
   position: relative;
   top: 0;
   left: 160px;
+  width: 80%;
   padding: 5em 3em 1em 4em;
   margin: 0; }
   .adminGrid .itemGrid {
@@ -585,41 +664,42 @@ a:hover {
   color: #FA5555;
   text-decoration: none; }
 
-.adminGrid {
+.receiptGrid {
   position: relative;
   top: 0;
   left: 160px;
+  width: 80%;
   padding: 5em 3em 1em 4em;
   margin: 0; }
-  .adminGrid .itemGrid {
+  .receiptGrid .itemGrid {
     background: #FFF;
     border: 2px solid #FFF;
     border-radius: 5px;
     margin: 1em;
     padding: 2em;
     text-align: left; }
-    .adminGrid .itemGrid span {
+    .receiptGrid .itemGrid span {
       font-family: "Slabo 27px", serif;
       font-size: 4em;
       color: #393E46; }
-    .adminGrid .itemGrid .a:hover {
+    .receiptGrid .itemGrid .a:hover {
       color: #E42F45; }
-    .adminGrid .itemGrid .eight:hover {
+    .receiptGrid .itemGrid .eight:hover {
       color: #189dcc; }
-    .adminGrid .itemGrid .f:hover {
+    .receiptGrid .itemGrid .f:hover {
       color: #D5441C; }
-    .adminGrid .itemGrid .three:hover {
+    .receiptGrid .itemGrid .three:hover {
       color: #7ebf35; }
-    .adminGrid .itemGrid .c:hover {
+    .receiptGrid .itemGrid .c:hover {
       color: #35b9bf; }
-    .adminGrid .itemGrid .y:hover {
+    .receiptGrid .itemGrid .y:hover {
       color: #FDEA2E; }
-    .adminGrid .itemGrid h3 {
+    .receiptGrid .itemGrid h3 {
       padding: 4px;
       color: #2D7D8F;
       letter-spacing: 1px;
       display: inline-block; }
-    .adminGrid .itemGrid button {
+    .receiptGrid .itemGrid button {
       margin-left: 4em; }
 
 /*# sourceMappingURL=main.css.map */

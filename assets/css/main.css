@@ -309,12 +309,18 @@ input {
   overflow-y: auto;
   transition: width 0.3s ease;
   box-shadow: inset -7px 0 30px -7px #000; }
-  .main-nav a {
-    display: block;
-    color: white;
-    padding-left: 10%; }
-    .main-nav a:hover, .main-nav a:focus {
-      background: linear-gradient(#484848, #383838); }
+  .main-nav .categories {
+    padding: 2em 0 4em 0;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: left; }
+    .main-nav .categories a {
+      display: block;
+      color: #FFF;
+      padding-left: 10%; }
+    .main-nav .categories:hover, .main-nav .categories:focus {
+      color: #3a4ed5; }
   .main-nav:after {
     content: "";
     position: absolute;
@@ -344,52 +350,26 @@ input {
     width: 75%;
     left: 25%; }
 
-.consumerContainer .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 1000px;
-  padding: 5em 1em 1em;
-  background: #2D7D8F;
-  background: -webkit-linear-gradient(45deg, #3a4ed5, #2D7D8F);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(45deg, #3a4ed5, #2D7D8F);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(45deg, #3a4ed5, #2D7D8F);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(45deg, #3a4ed5, #2D7D8F);
-  /* Standard syntax */
+.consumerContainer .sidebar #logo {
+  font-family: "Slabo 27px", serif;
+  color: #DDDDDD;
+  font-size: 10em;
+  text-align: center;
+  letter-spacing: -20px; }
+.consumerContainer .sidebar #search {
+  margin: auto;
+  margin-top: 3em;
   text-align: center; }
-  .consumerContainer .sidebar #logo {
-    font-family: "Slabo 27px", serif;
-    color: #DDDDDD;
-    font-size: 10em;
-    text-align: center;
-    letter-spacing: -20px; }
-  .consumerContainer .sidebar #search {
-    margin: auto;
-    margin-top: 3em;
-    text-align: center; }
-  .consumerContainer .sidebar .categories {
-    padding: 2em 0 4em 2.5em;
-    font-family: "Slabo 27px", serif;
-    font-size: 2em;
-    line-height: 1.5em;
-    text-align: left; }
-    .consumerContainer .sidebar .categories a {
-      color: #FFF; }
-    .consumerContainer .sidebar .categories a:hover {
-      color: #3a4ed5; }
-  .consumerContainer .sidebar .cart {
-    background: #DDDDDD;
-    border: 2px solid #DDDDDD;
-    border-radius: 6px;
-    height: 8em;
-    margin: 0 2em 1em 2em;
-    padding: 2em;
-    color: #3a4ed5;
-    text-align: left;
-    letter-spacing: 1px; }
+.consumerContainer .sidebar .cart {
+  background: #DDDDDD;
+  border: 2px solid #DDDDDD;
+  border-radius: 6px;
+  height: 8em;
+  margin: 0 2em 1em 2em;
+  padding: 2em;
+  color: #3a4ed5;
+  text-align: left;
+  letter-spacing: 1px; }
 
 .adminContainer .sidebar {
   position: fixed;

@@ -45,19 +45,25 @@ input {  //search bar
   overflow-y: auto;
   transition: width 0.3s ease;
   box-shadow: inset -7px 0 30px -7px #000; //makes the shadow
-  a {          //categories
+  .categories{
+    padding: 2em 0 4em 0;
+    font-family: $display-font;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: left;
+    a {          //categories
     display: block;
     // background: linear-gradient(#3E3E3E, #383838);  //small, small gradient here!
     // background: #2D7D8F;
     // background: linear-gradient(45deg, #3a4ed5 , #2D7D8F);
     // border-top: 1px solid #484848;
     // border-bottom: 1px solid #2E2E2E;
-    color: white;
+    color: #FFF;
     padding-left: 10%;
-
-    &:hover, &:focus {
-      background: linear-gradient(#484848, #383838); //small gradient on hover
     }
+    &:hover, &:focus {
+      color: $purple;
+    } 
   }
   &:after {
     content: "";
@@ -95,20 +101,21 @@ input {  //search bar
 } //http://codepen.io/chriscoyier/pen/umEgv
 
 
+
 // For consumer pages
 .consumerContainer{
   .sidebar{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 1000px;
-  padding: 5em 1em 1em;
-  background: $teal;
-  background: -webkit-linear-gradient(45deg, $purple , $teal); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(45deg, $purple, $teal); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(45deg, $purple, $teal); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(45deg, $purple , $teal); /* Standard syntax */
-  text-align: center;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // height: 1000px;
+  // padding: 5em 1em 1em;
+  // background: $teal;
+  // background: -webkit-linear-gradient(45deg, $purple , $teal); /* For Safari 5.1 to 6.0 */
+  // background: -o-linear-gradient(45deg, $purple, $teal); /* For Opera 11.1 to 12.0 */
+  // background: -moz-linear-gradient(45deg, $purple, $teal); /* For Firefox 3.6 to 15 */
+  // background: linear-gradient(45deg, $purple , $teal); /* Standard syntax */
+  // text-align: center;
   #logo{
     font-family: $display-font;
     color: $white;
@@ -165,19 +172,7 @@ input {  //search bar
   //     outline:none; }
   // //http://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069
 
-  .categories{
-    padding: 2em 0 4em 2.5em;
-    font-family: $display-font;
-    font-size: 2em;
-    line-height: 1.5em;
-    text-align: left;
-    // text-transform: uppercase;
-    a{
-      color: #FFF;
-    }
-    a:hover{
-      color: $purple;
-    } }
+
   .cart{
     background: $white;
     border: 2px solid $white;

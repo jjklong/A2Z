@@ -8,11 +8,9 @@ app.config(function($routeProvider){
     })
     .when('/admin',{
       templateUrl: 'pages/adminView.html',
-      controller: 'AzController'
     })
     .when('/consumer',{
-      templateUrl: 'pages/consumerView.html',
-      controller: 'AzController'
+      templateUrl: 'pages/consumerView.html'
     })
     .when('/product',{
       templateUrl: 'pages/cProductView.html'

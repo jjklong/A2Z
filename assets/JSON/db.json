@@ -6,7 +6,7 @@
       "price": "2.99",
       "qty": "1",
       "description": "the first letter of the English alphabet, a vowel.",
-      "img": "https://image.freepik.com/free-icon/letter-a-logo-inside-a-circle_318-53445.jpg",
+      "img": "A",
       "reviews": []
     },
     {
@@ -15,9 +15,34 @@
       "price": "3.99",
       "qty": "2",
       "description": "the second letter, first consonant.",
-      "img": "#",
+      "img": "B",
       "reviews": []
+    },
+    {
+      "name": "Letter C",
+      "price": 5.99,
+      "description": "Third guy",
+      "img": "C",
+      "id": 3
+    },
+    {
+      "name": "Letter D",
+      "price": 1.33,
+      "description": "4th",
+      "img": "D",
+      "id": 4
+    },
+    {
+      "name": "Letter E",
+      "price": 1.5,
+      "description": "5th letter",
+      "img": "E",
+      "id": 5
     }
   ],
-  "checkout": []
+  "checkout": [
+    {
+      "id": 1
+    }
+  ]
 }

@@ -24,16 +24,17 @@
 
 
 
-  <ul class="sieve consumerGrid">
+  <ul class="sieve consumerGrid" ng-controller="ConsumerController">
+    <li class="itemGrid" ng-repeat="product in a2z.products">
     <a href="#/product">
-      <li class="itemGrid">
-        <span class="a">A</span>
-        <h3>The Letter "A"</h3>
-        <h5>$49.99</h5>
-        <button type="button" name="button">Add to cart</button>
-      </li>
-    </a>
-    <a href="#/product">
+
+        <span class="a">{{product.img}}</span>
+        <h3>{{product.name}}</h3>
+        <h5>{{product.price}}</h5>
+        </a>
+        <button ng-click="cartAZ(product.id)" type="button" name="button">Add to cart</button>
+    </li>
+    <!-- <a href="#/product">
       <li class="itemGrid">
         <span class="eight">8</span>
         <h3>The Letter "8"</h3>
@@ -72,6 +73,6 @@
         <h5>$249.99</h5>
         <button type="button" name="button">Add to cart</button>
       </li>
-    </a>
+    </a> -->
   </ul>
 </div>

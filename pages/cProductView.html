@@ -15,18 +15,18 @@
     <a href="#/consumer">back</a>
   </div>
 
-  <div class="consumerGrid">
+  <div class="consumerGrid" ng-repeat="products in a2z.products">
     <div class="productImage">
-      <span class="a">A</span>
+      <span class="a">{{products.img}}</span>
       <img src="" alt="" />
     </div>
 
 
     <div class="productDetails">
-      <h3>Name</h3>
-      <h5>Price</h5>
+      <h3>{{products.name}}</h3>
+      <h5>{{products.price}}</h5>
       <p>
-        description about a
+        {{products.description}}
       </p>
       <p>
         reviews

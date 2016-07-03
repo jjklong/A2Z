@@ -1,4 +1,108 @@
 //SIDEBAR ON ALL PAGES
+
+// Animation:
+// * {
+//   box-sizing: border-box;
+// }
+//
+// html, body { min-height: 100%; }
+// a { text-decoration: none; }
+// input {  //search bar
+//   text-align: center;
+//   width: 100%;} //takes up 100% of the slide-nav
+// .main-header {       // hamburger menu
+//   // background: #C2CFD8;
+//   padding: 5px;
+//   // text-align: center;
+//   // color: white;
+//   text-shadow: #222 0px -1px 1px;
+//   position: fixed;
+//   width: 100%;
+//   left: 0;
+//   transition: all 0.3s ease;
+//   a {
+//     position: absolute;
+//     left: 20px;
+//     top: 20px;
+//     color: white;
+//     font-size: 32px;
+//   }
+// }
+// .page-wrap {
+//   float: right;
+//   width: 100%;
+//   transition: width 0.3s ease;
+// }
+// .main-nav {   // categories
+//   position: fixed;
+//   top: 0;
+//   // width: 0;
+//   width: 15%;
+//   height: 100%;
+//   padding-top: 8%;
+//   background: #2D7D8F;
+//   background: linear-gradient(45deg, #3a4ed5 , #2D7D8F);
+//   overflow-y: auto;
+//   transition: width 0.3s ease;
+//   box-shadow: inset -7px 0 30px -7px #000; //makes the shadow
+//   .categories{
+//     padding: 2em 0 4em 0;
+//     font-family: $display-font;
+//     font-size: 20px;
+//     line-height: 1.5em;
+//     text-align: left;
+//     a {          //categories
+//     display: block;
+//     // background: linear-gradient(#3E3E3E, #383838);  //small, small gradient here!
+//     // background: #2D7D8F;
+//     // background: linear-gradient(45deg, #3a4ed5 , #2D7D8F);
+//     // border-top: 1px solid #484848;
+//     // border-bottom: 1px solid #2E2E2E;
+//     color: #FFF;
+//     padding-left: 10%;
+//     }
+//     &:hover, &:focus {
+//       color: $purple;
+//     }
+//   }
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     height: 100%;
+//     width: 34px;//34px
+//     background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
+//
+//   }
+// }
+// .content {
+//   padding: 100px 20px 20px 20px;
+// }
+// .close-menu { //x to close menu
+//   display: none;
+//   width: 20%;
+// }
+// #main-nav:target {
+//   width: 25%;
+// }
+// #main-nav:target + .page-wrap {  //once opened...
+//   width: 95%;
+//   .open-menu {  //hamburger menu to open with
+//      display: none;
+//   }
+//   .close-menu {  //x to close with
+//      display: block;
+//   }
+//   .main-header {
+//     width: 75%;
+//     left: 25%;
+//   }
+// } //http://codepen.io/chriscoyier/pen/umEgv
+
+
+
+// For consumer pages
 .consumerContainer{
   .sidebar{
   position: fixed;
@@ -19,11 +123,25 @@
     text-align: center;
     letter-spacing: -20px;
   }
-  #search{
-    margin: auto;
-    margin-top: 3em;
-    text-align: center;
+  .categories{
+    padding: 3em 0 4em 1em;
+    font-family: $display-font;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: left;
+    // text-transform: uppercase;
+    a{
+      color: $white;
+    }
+    a:hover{
+      color: $red;
+    }
   }
+  // #search{
+  //   margin: auto;
+  //   margin-top: 3em;
+  //   text-align: center;
+  // }
   // Search bar
   // .box {
   //   padding-bottom: 50px; }
@@ -68,19 +186,7 @@
   //     outline:none; }
   // //http://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069
 
-  .categories{
-    padding: 2em 0 4em 2.5em;
-    font-family: $display-font;
-    font-size: 2em;
-    line-height: 1.5em;
-    text-align: left;
-    // text-transform: uppercase;
-    a{
-      color: #FFF;
-    }
-    a:hover{
-      color: $purple;
-    } }
+
   .cart{
     background: $white;
     border: 2px solid $white;
@@ -88,8 +194,64 @@
     border-radius: 6px;
     height: 8em;
     margin: 0 2em 1em 2em;
-    padding: 2em;
-    color: $purple;
+    padding: 1em;
+    color: $blue;
     text-align: left;
     letter-spacing: 1px;
+    p{
+      padding-bottom: 20px;
+    }
   } } }
+
+
+
+
+// For admin page
+  .adminContainer{
+    .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    padding: 5em 1em 1em 1em;
+    background: $teal;
+    background: -webkit-linear-gradient(45deg, $purple , $teal); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(45deg, $purple, $teal); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, $purple, $teal); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, $purple , $teal); /* Standard syntax */
+    text-align: center;
+    #logo{
+      font-family: $display-font;
+      color: $white;
+      font-size: 3em;
+      text-align: center;
+      letter-spacing: -5px;
+    }
+    .dashboard{
+      color: $white;
+    }
+    .categories{
+      padding: 3em 0 4em 1em;
+      font-family: $display-font;
+      font-size: 16px;
+      line-height: 1.5em;
+      text-align: left;
+      // text-transform: uppercase;
+      a{
+        color: #FFF;
+      }
+      a:hover{
+        color: $purple;
+      } }
+    .cart{
+      background: $white;
+      border: 2px solid $white;
+      // opacity: 0.5;
+      border-radius: 6px;
+      height: 8em;
+      margin: 0 2em 1em 2em;
+      padding: 2em;
+      color: $purple;
+      text-align: left;
+      letter-spacing: 1px;
+    } } }

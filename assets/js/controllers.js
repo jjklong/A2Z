@@ -42,26 +42,19 @@ app.controller('AdminController', function($scope, $http){
 //CONSUMER CONTROLLER
 app.controller('ConsumerController', function ($scope, $http){
     $scope.cartAZ = function (product) {
-      $http.get('http://localhost:3002/products/' + product).success(function(response){
-        console.log(response);
+    //in cartAZ, the function picks up the product (which refers to the product.id in the HTML file. )
+      $http({
+        method: 'GET',
+        url: 'http://localhost:3002/products/' + product
+      }).success(function(response){
+        console.log(response);    //logs object{item} that was clicked on ADD TO CART
+
       $http({
         method: 'POST',
         url: 'http://localhost:3002/checkout'
       }).success(function success(product){
-        console.log(product);
+        console.log(product);     //logs object{ID} when ADD TO CART is clicked
       });
     });
   };
   });
-
-  // console.log($scope.a2z.products);
-  // var cart = this;
-  // console.log(this);
-  // $scope.cart = [];
-  // console.log(cart);
-  //   $http({
-  //     method: 'POST',
-  //     url: 'http://localhost:3002/checkout'
-  //   }).success(function cartAZ(index){
-  //     cart.products = ind ex;
-  //   });

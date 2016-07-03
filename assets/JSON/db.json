@@ -1,11 +1,39 @@
 {
   "products": [
-
+    {
+      "name": "A",
+      "price": 1.99,
+      "description": "vowel",
+      "img": "A",
+      "qty": 1,
+      "id": 1
+    },
+    {
+      "name": "B",
+      "price": 2.99,
+      "description": "second letter",
+      "img": "B",
+      "qty": 1,
+      "id": 2
+    }
   ],
   "checkout": [
-
+    {
+      "name": "A",
+      "price": 1.99,
+      "description": "vowel",
+      "img": "A",
+      "qty": 1,
+      "id": 1
+    },
+    {
+      "name": "B",
+      "price": 2.99,
+      "description": "second letter",
+      "img": "B",
+      "qty": 1,
+      "id": 2
+    }
   ],
-  "details": [
-  
-  ]
+  "details": []
 }

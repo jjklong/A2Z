@@ -51,7 +51,8 @@ app.controller('ConsumerController', function ($scope, $http){
 
       $http({
         method: 'POST',
-        url: 'http://localhost:3002/checkout'
+        url: 'http://localhost:3002/checkout',
+        data: response
       }).success(function success(product){
         console.log(product);     //logs object{ID} when ADD TO CART is clicked
       });

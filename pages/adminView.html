@@ -16,15 +16,6 @@
     <a href="#/home">back</a>
   </div>
 
-  <ul>
-    <li ng-repeat="product in a2z.products">
-      {{product.name}}
-      [<a href ng-click="removeItem($index)">X</a>]
-    </li>
-  </ul>
-  <br>
-  <br>
-
   <form ng-submit="addAZ()" method="post">
     <input type="text" name="name" value="" ng-model="azname" placeholder="Name">
     <input type="text" name="name" value="" ng-model="azprice" placeholder="Price">
@@ -37,9 +28,11 @@
   <ul class="adminGrid">
     <a href="#/product">
       <li class="itemGrid" ng-repeat="product in a2z.products">
-        <span class="a">A</span>
+        <span class="a">{{product.img}}</span>
         <h3>{{product.name}}</h3>
         <h3>{{product.price}}</h3>
+        <a href ng-click="removeItem($index)">REMOVE</a>
+
         <button type="button" name="button">Edit Item</button>
       </li>
     </a>

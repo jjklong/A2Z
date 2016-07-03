@@ -29,6 +29,7 @@ app.controller('AdminController', function($scope, $http){
     url: 'http://localhost:3002/products',
     data: $scope.newProduct
   }).success(function addAZ(product){
+    $scope.a2z.products.push(product);
     console.log(product);
     $scope.azname = '';
     $scope.azprice = '';
@@ -37,12 +38,11 @@ app.controller('AdminController', function($scope, $http){
     });
   };
   $scope.removeItem = function (index) {
-      $scope.a2z.products.splice(index, 1);
       $http({
         method:'DELETE',
-        url:'http://localhost:3002/products/' + index
-      }).success(function(index){
-        console.log(index);
+        url:'http://localhost:3002/products/' + (index+1)
+      }).success(function(){
+        $scope.a2z.products.splice((index), 1);
       });
     };
 

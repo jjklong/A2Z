@@ -7,10 +7,11 @@ app.config(function($routeProvider){
       controller: 'AzController'
     })
     .when('/admin',{
-      templateUrl: 'pages/adminView.html',
+      templateUrl: 'pages/adminView.html'
     })
     .when('/consumer',{
-      templateUrl: 'pages/consumerView.html'
+      templateUrl: 'pages/consumerView.html',
+      controller: 'ConsumerController'
     })
     .when('/product/',{
       templateUrl: 'pages/cProductView.html'

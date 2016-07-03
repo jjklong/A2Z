@@ -1,8 +1,6 @@
 @import '../../bower_components/reset-css/_reset';
 @import "../../bower_components/susy/sass/susy";
 @import 'https://fonts.googleapis.com/css?family=Slabo+27px|Work+Sans:400,900';
-$fa-font-path: "../../bower_components/font-awesome/fonts";
-
 
 // Colors:
 $teal: #2D7D8F;
@@ -89,7 +87,7 @@ $susy: (
 
 
 
-@import "partials/hamburger-menu";
+// @import "partials/hamburger-menu";
 @import "partials/buttons";
 @import "partials/sidebar";
 @import "partials/home";

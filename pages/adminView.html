@@ -14,58 +14,28 @@
     <a href="#/home">back</a>
   </div>
 
-</div>
 
+
+<div ng-controller="AdminController">
+
+  <form ng-submit="addAZ()" method="post">
+    <input type="text" name="name" value="" ng-model="azname" placeholder="Name">
+    <input type="text" name="name" value="" ng-model="azprice" placeholder="Price">
+    <input class="desc" type="text" name="name" value="" ng-model="azdescription" placeholder="Description">
+    <input type="text" name="name" value="" ng-model="azimg" placeholder="Image">
+    <input class="submit" type="submit" name="submit" value="Submit">
+  </form>
 
 
   <ul class="adminGrid">
     <a href="#/product">
-      <li class="itemGrid">
+      <li class="itemGrid" ng-repeat="product in a2z.products">
         <span class="a">A</span>
-        <h3>The Letter "A"</h3>
-        <h3>$49.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="eight">8</span>
-        <h3>The Letter "8"</h3>
-        <h3>$219.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="f">F</span>
-        <h3>The Letter "F"</h3>
-        <h3>$129.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="three">3</span>
-        <h3>The Number "3"</h3>
-        <h3>$449.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="c">C</span>
-        <h3>The Letter "C"</h3>
-        <h3>$399.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="y">Y</span>
-        <h3>The Letter "Y"</h3>
-        <h3>$249.99</h3>
+        <h3>{{product.name}}</h3>
+        <h3>{{product.price}}</h3>
         <button type="button" name="button">Edit Item</button>
       </li>
     </a>
   </ul>
+</div>
 </div>

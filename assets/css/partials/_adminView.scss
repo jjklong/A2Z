@@ -14,6 +14,23 @@ a:hover{
   text-decoration: none;
 }
 
+form{
+  width: 70%;
+  margin-top: 5%;
+  padding-left: 15%;
+}
+input{
+  border: 2px solid $grey;
+  border-radius: 5px;
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+  font-family: $font;
+  font-size: 1em;
+.desc{
+  height: 20%;
+
+} }
 .adminGrid{
   position: relative;
   top: 0;
@@ -63,16 +80,28 @@ a:hover{
       letter-spacing: 1px;
       display: inline-block;
     }
-    // h5{
-    //   // background: $teal;
-    //   // margin: 0 5px 0 5px;
-    //   padding-bottom: 8px;
-    //   font-family: $display-font;
-    //   color: $teal;
-    //   // font-style: italic;
-    //   letter-spacing: 2px;
-    // }
     button{
       margin-left: 4em;
+    } } }
+
+
+
+
+    .submit{
+      background: $blue;
+      border: 2px solid $blue;
+      border-radius: 5px;
+      padding: 10px;
+      color: #FFF;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
-  } }
+    .submit:hover{
+      background: #FFF;
+      border: 2px solid $blue;
+      border-radius: 5px;
+      color: $blue;
+    }
+    .submit:focus {
+      outline: 0;
+    }

@@ -30,55 +30,19 @@
 </div>
 
 
-
-  <ul class="receiptGrid">
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="a">A</span>
-        <h3>The Letter "A"</h3>
-        <h3>$49.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="eight">8</span>
-        <h3>The Letter "8"</h3>
-        <h3>$219.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="f">F</span>
-        <h3>The Letter "F"</h3>
-        <h3>$129.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="three">3</span>
-        <h3>The Number "3"</h3>
-        <h3>$449.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="c">C</span>
-        <h3>The Letter "C"</h3>
-        <h3>$399.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
-    <a href="#/product">
-      <li class="itemGrid">
-        <span class="y">Y</span>
-        <h3>The Letter "Y"</h3>
-        <h3>$249.99</h3>
-        <button type="button" name="button">Edit Item</button>
-      </li>
-    </a>
+<div class="receipt">
+  <ul class="receiptGrid" ng-controller="ConsumerController">
+    <!-- <li>
+      <span>Image</span>
+      <span>Name</span>
+      <span>Price</span>
+      <span>Quantity</span>
+    </li> -->
+    <li class="itemGrid" ng-repeat="product in a2z.products">
+      <span class="a">{{product.img}}</span>
+      <h3>{{product.name}}</h3>
+      <h3>{{product.price | currency}}</h3>
+      <h3>{{product.qty}}</h3>
+    </li>
   </ul>
 </div>

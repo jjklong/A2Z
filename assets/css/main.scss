@@ -74,12 +74,12 @@ $susy: (
           @include span(1 of 2);
         }
 
-        // .productImage{
-        //   @include span(2);
-        // }
-        // .productDetails{
-        //   @include span(2);
-        // }
+        .productImage{
+          @include span(2);
+        }
+        .productDetails{
+          @include span(2);
+        }
       }
     }
 

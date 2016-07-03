@@ -103,6 +103,14 @@ table {
       width: 44.44444%;
       float: left;
       margin-right: 11.11111%; }
+    .adminContainer .adminGrid .productImage {
+      width: 23.07692%;
+      float: left;
+      margin-right: 2.5641%; }
+    .adminContainer .adminGrid .productDetails {
+      width: 23.07692%;
+      float: left;
+      margin-right: 2.5641%; }
 
 button {
   background: #3366B1;
@@ -164,14 +172,18 @@ button:focus {
     background: #DDDDDD;
     border: 2px solid #DDDDDD;
     border-radius: 6px;
+    width: 85%;
     height: 8em;
-    margin: 0 2em 1em 2em;
+    overflow: scroll;
+    margin: 0 1em 1em 1em;
     padding: 1em;
     color: #3366B1;
     text-align: left;
     letter-spacing: 1px; }
     .consumerContainer .sidebar .cart p {
-      padding-bottom: 20px; }
+      padding-bottom: 10px; }
+    .consumerContainer .sidebar .cart li {
+      padding-bottom: 5px; }
 
 .adminContainer .sidebar {
   position: fixed;
@@ -207,16 +219,6 @@ button:focus {
       color: #FFF; }
     .adminContainer .sidebar .categories a:hover {
       color: #3a4ed5; }
-  .adminContainer .sidebar .cart {
-    background: #DDDDDD;
-    border: 2px solid #DDDDDD;
-    border-radius: 6px;
-    height: 8em;
-    margin: 0 2em 1em 2em;
-    padding: 2em;
-    color: #3a4ed5;
-    text-align: left;
-    letter-spacing: 1px; }
 
 body {
   background: #DDDDDD;

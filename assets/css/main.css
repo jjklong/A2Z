@@ -73,9 +73,9 @@ table {
     float: left;
     margin-right: 2.5641%; }
     .consumerContainer .consumerGrid .itemGrid {
-      width: 23.07692%;
+      width: 31.03448%;
       float: left;
-      margin-right: 2.5641%; }
+      margin-right: 3.44828%; }
     .consumerContainer .consumerGrid .productImage {
       width: 35.89744%;
       float: left;
@@ -84,6 +84,25 @@ table {
       width: 35.89744%;
       float: left;
       margin-right: 2.5641%; }
+
+.adminContainer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  .adminContainer .sidebar {
+    width: 10.25641%;
+    float: left;
+    margin-right: 2.5641%;
+    margin: 0; }
+  .adminContainer .adminGrid {
+    width: 23.07692%;
+    float: left;
+    margin-right: 2.5641%; }
+    .adminContainer .adminGrid .itemGrid {
+      width: 44.44444%;
+      float: left;
+      margin-right: 11.11111%; }
 
 button {
   background: #3366B1;
@@ -103,8 +122,6 @@ button:hover {
 button:focus {
   outline: 0; }
 
-.sidebar button {
-  margin: 16px 5px 0 80px; }
 .sidebar button:hover {
   background: #DDDDDD;
   border: 2px solid #3366B1;
@@ -133,21 +150,64 @@ button:focus {
     font-size: 10em;
     text-align: center;
     letter-spacing: -20px; }
-  .consumerContainer .sidebar #search {
-    margin: auto;
-    margin-top: 3em;
-    text-align: center; }
   .consumerContainer .sidebar .categories {
-    padding: 2em 0 4em 2.5em;
+    padding: 3em 0 4em 1em;
     font-family: "Slabo 27px", serif;
-    font-size: 2em;
+    font-size: 20px;
     line-height: 1.5em;
     text-align: left; }
     .consumerContainer .sidebar .categories a {
-      color: #FFF; }
+      color: #DDDDDD; }
     .consumerContainer .sidebar .categories a:hover {
-      color: #3a4ed5; }
+      color: #FA5555; }
   .consumerContainer .sidebar .cart {
+    background: #DDDDDD;
+    border: 2px solid #DDDDDD;
+    border-radius: 6px;
+    height: 8em;
+    margin: 0 2em 1em 2em;
+    padding: 1em;
+    color: #3366B1;
+    text-align: left;
+    letter-spacing: 1px; }
+    .consumerContainer .sidebar .cart p {
+      padding-bottom: 20px; }
+
+.adminContainer .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1000px;
+  padding: 5em 1em 1em 1em;
+  background: #2D7D8F;
+  background: -webkit-linear-gradient(45deg, #3a4ed5, #2D7D8F);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(45deg, #3a4ed5, #2D7D8F);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, #3a4ed5, #2D7D8F);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(45deg, #3a4ed5, #2D7D8F);
+  /* Standard syntax */
+  text-align: center; }
+  .adminContainer .sidebar #logo {
+    font-family: "Slabo 27px", serif;
+    color: #DDDDDD;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: -5px; }
+  .adminContainer .sidebar .dashboard {
+    color: #DDDDDD; }
+  .adminContainer .sidebar .categories {
+    padding: 3em 0 4em 1em;
+    font-family: "Slabo 27px", serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: left; }
+    .adminContainer .sidebar .categories a {
+      color: #FFF; }
+    .adminContainer .sidebar .categories a:hover {
+      color: #3a4ed5; }
+  .adminContainer .sidebar .cart {
     background: #DDDDDD;
     border: 2px solid #DDDDDD;
     border-radius: 6px;
@@ -219,6 +279,78 @@ a:hover {
   color: #FA5555;
   text-decoration: none; }
 
+form {
+  width: 70%;
+  margin-top: 5%;
+  padding-left: 15%; }
+
+input {
+  border: 2px solid #C2CFD8;
+  border-radius: 5px;
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em; }
+  input .desc {
+    height: 20%; }
+
+.adminGrid {
+  position: relative;
+  top: 0;
+  left: 160px;
+  width: 80%;
+  padding: 5em 3em 1em 4em;
+  margin: 0; }
+  .adminGrid .itemGrid {
+    background: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 2em;
+    text-align: left; }
+    .adminGrid .itemGrid span {
+      font-family: "Slabo 27px", serif;
+      font-size: 4em;
+      color: #393E46; }
+    .adminGrid .itemGrid .a:hover {
+      color: #E42F45; }
+    .adminGrid .itemGrid .eight:hover {
+      color: #189dcc; }
+    .adminGrid .itemGrid .f:hover {
+      color: #D5441C; }
+    .adminGrid .itemGrid .three:hover {
+      color: #7ebf35; }
+    .adminGrid .itemGrid .c:hover {
+      color: #35b9bf; }
+    .adminGrid .itemGrid .y:hover {
+      color: #FDEA2E; }
+    .adminGrid .itemGrid h3 {
+      padding: 4px;
+      color: #2D7D8F;
+      letter-spacing: 1px;
+      display: inline-block; }
+    .adminGrid .itemGrid button {
+      margin-left: 4em; }
+
+.submit {
+  background: #3366B1;
+  border: 2px solid #3366B1;
+  border-radius: 5px;
+  padding: 10px;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.submit:hover {
+  background: #FFF;
+  border: 2px solid #3366B1;
+  border-radius: 5px;
+  color: #3366B1; }
+
+.submit:focus {
+  outline: 0; }
+
 body {
   background: #DDDDDD;
   font-family: "Work Sans", sans-serif;
@@ -243,10 +375,11 @@ a:hover {
     background: #FFF;
     border: 2px solid #FFF;
     border-radius: 5px;
-    width: 13em;
-    margin: 1em;
+    width: 15em;
+    margin: 2em;
     padding: 1em;
-    text-align: center; }
+    text-align: center;
+    display: inline-block; }
     .consumerGrid .itemGrid span {
       font-family: "Slabo 27px", serif;
       font-size: 10em;
@@ -346,5 +479,43 @@ a {
 a:hover {
   color: #FA5555;
   text-decoration: none; }
+
+.receiptGrid {
+  position: relative;
+  top: 0;
+  left: 160px;
+  width: 80%;
+  padding: 5em 3em 1em 4em;
+  margin: 0; }
+  .receiptGrid .itemGrid {
+    background: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 2em;
+    text-align: left; }
+    .receiptGrid .itemGrid span {
+      font-family: "Slabo 27px", serif;
+      font-size: 4em;
+      color: #393E46; }
+    .receiptGrid .itemGrid .a:hover {
+      color: #E42F45; }
+    .receiptGrid .itemGrid .eight:hover {
+      color: #189dcc; }
+    .receiptGrid .itemGrid .f:hover {
+      color: #D5441C; }
+    .receiptGrid .itemGrid .three:hover {
+      color: #7ebf35; }
+    .receiptGrid .itemGrid .c:hover {
+      color: #35b9bf; }
+    .receiptGrid .itemGrid .y:hover {
+      color: #FDEA2E; }
+    .receiptGrid .itemGrid h3 {
+      padding: 4px;
+      color: #2D7D8F;
+      letter-spacing: 1px;
+      display: inline-block; }
+    .receiptGrid .itemGrid button {
+      margin-left: 4em; }
 
 /*# sourceMappingURL=main.css.map */

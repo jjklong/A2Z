@@ -1,4 +1,4 @@
-<div class="receipt">
+<!-- <div class="receipt">
   <img src="" alt="" />
   Name
   Price
@@ -9,4 +9,40 @@
   ____________
 
   Total
+</div> -->
+
+<div class="adminContainer">
+  <div class="sidebar">
+
+    <h1 id="logo">A2Z</h1>
+    <h1 class="dashboard">checkout</h1>
+
+      <!-- <ul class="categories">
+        <a href="#"><li>Add Item</li></a>
+        <a href="#"><li>Edit Items</li></a>
+        <a href="#"><li>View All</li></a>
+      </ul> -->
+
+    <br>
+    <a href="#/home">back</a>
+  </div>
+
+</div>
+
+
+<div class="receipt">
+  <ul class="receiptGrid" ng-controller="ConsumerController">
+    <!-- <li>
+      <span>Image</span>
+      <span>Name</span>
+      <span>Price</span>
+      <span>Quantity</span>
+    </li> -->
+    <li class="itemGrid" ng-repeat="product in a2z.products">
+      <span class="a">{{product.img}}</span>
+      <h3>{{product.name}}</h3>
+      <h3>{{product.price | currency}}</h3>
+      <h3>{{product.qty}}</h3>
+    </li>
+  </ul>
 </div>

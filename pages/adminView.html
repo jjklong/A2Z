@@ -1,5 +1,41 @@
-<div class="">
-  ADMIN STUFF HERE!
+<div class="adminContainer">
+  <div class="sidebar">
+
+    <h1 id="logo">A2Z</h1>
+    <h1 class="dashboard">dashboard</h1>
+
+      <ul class="categories">
+        <a href="#"><li>Add Item</li></a>
+        <a href="#"><li>Edit Items</li></a>
+        <a href="#"><li>View All</li></a>
+      </ul>
+
+    <br>
+    <a href="#/home">back</a>
+  </div>
+
+
+
+<div ng-controller="AdminController">
+
+  <form ng-submit="addAZ()" method="post">
+    <input type="text" name="name" value="" ng-model="azname" placeholder="Name">
+    <input type="text" name="name" value="" ng-model="azprice" placeholder="Price">
+    <input class="desc" type="text" name="name" value="" ng-model="azdescription" placeholder="Description">
+    <input type="text" name="name" value="" ng-model="azimg" placeholder="Image">
+    <input class="submit" type="submit" name="submit" value="Submit">
+  </form>
+
+
+  <ul class="adminGrid">
+    <a href="#/product">
+      <li class="itemGrid" ng-repeat="product in a2z.products">
+        <span class="a">A</span>
+        <h3>{{product.name}}</h3>
+        <h3>{{product.price}}</h3>
+        <button type="button" name="button">Edit Item</button>
+      </li>
+    </a>
+  </ul>
 </div>
-<br>
-<a href="#/home">back</a>
+</div>

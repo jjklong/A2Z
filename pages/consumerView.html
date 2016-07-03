@@ -1,30 +1,48 @@
 <div class="consumerContainer">
-  <div class="sidebar">
-    <h1 id="logo">A2Z</h1>
 
-    <input id="search" type="text" placeholder="search..." search>  
+<!-- <div id="sp-nav"> -->
+    <nav class="main-nav sidebar" id="main-nav">
+      <h1 id="logo">A2Z</h1>
+<!-- <button ng-click="$spMenu.toggle()">Menu</button> -->
 
-    <!-- <input id="search" type="search" placeholder="search..."> -->
+        <!-- <input id="search" type="text" placeholder="Search..." search> -->
+        <ul class="categories">
+          <a href="#"><li>Vowels</li></a>
+          <a href="#"><li>Consonants</li></a>
+          <a href="#"><li>Numbers</li></a>
+        </ul>
+      <!-- <input id="search" type="search" placeholder="search..."> -->
 
-    <!-- <div class='box'><div class='container-1'><label><span class='icon'><i class='fa fa-search'></i></span><input type='text' id='search' class='search' placeholder='Search...'></label></div></div> -->
+      <!-- <div class='box'><div class='container-1'><label><span class='icon'><i class='fa fa-search'></i></span><input type='text' id='search' class='search' placeholder='Search...'></label></div></div> -->
 
 
-      <ul class="categories">
-        <a href="#"><li>Vowels</li></a>
-        <a href="#"><li>Consonants</li></a>
-        <a href="#"><li>Numbers</li></a>
-      </ul>
-    <div class="cart">
-      <p>Cart</p>
-      <a href="#/checkout"><button type="button" name="button">Checkout</button></a>
-    </div>
-    <br>
-    <a href="#/home">back</a>
+      <div class="cart">
+        <p>Cart</p>
+        <a href="#/checkout"><button type="button" name="button">Checkout</button></a>
+      </div>
+      <br>
+      <a href="#/home">back</a>
+    </nav>
+
+    <!-- <div class="page-wrap"> -->
+      <!-- <header class="main-header">
+        <a href="#main-nav" class="open-menu">
+          ☰
+        </a>
+        <a href="#" class="close-menu">
+          X
+        </a>  -->
+        <!--add transition hambuger thing-->
+      <!-- </header> -->
+    <!-- </div> -->
+
   </div>
+</div>
+</div>
 
 
 
-  <ul class="sieve consumerGrid">
+  <ul id="sp-page" class="sieve consumerGrid content">
     <a href="#/product">
       <li class="itemGrid">
         <span class="a">A</span>

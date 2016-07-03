@@ -19,7 +19,8 @@ app.controller('AdminController', function($scope, $http){
       name: $scope.azname,
       price: $scope.azprice,
       description: $scope.azdescription,
-      img: $scope.azimg
+      img: $scope.azimg,
+      qty: 1
     };
 
 
@@ -35,12 +36,23 @@ app.controller('AdminController', function($scope, $http){
     $scope.azimg = '';
     });
   };
+  $scope.removeItem = function (index) {
+      $scope.a2z.products.splice(index, 1);
+      $http({
+        method:'DELETE',
+        url:'http://localhost:3002/products/' + index
+      }).success(function(index){
+        console.log(index);
+      });
+    };
+
 });
 
 
 
 //CONSUMER CONTROLLER
 app.controller('ConsumerController', function ($scope, $http){
+//cartAZ adds product to cart
     $scope.cartAZ = function (product) {
     //in cartAZ, the function picks up the product (which refers to the product.id in the HTML file. )
       $http({
@@ -58,4 +70,20 @@ app.controller('ConsumerController', function ($scope, $http){
       });
     });
   };
-  });
+
+  $scope.viewAZ = function (product){
+    $http({
+      method: 'GET',
+      url: 'http://localhost:3002/products/' + product
+    }).success(function(response){
+      console.log(response);
+      $http({
+        method: 'POST',
+        url: 'http://localhost:3002/details/',
+        data: response
+      }).success(function success(product){
+        console.log(product);
+      });
+    });
+  };
+});

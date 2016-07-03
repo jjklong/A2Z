@@ -1,12 +1,18 @@
 <div class="receipt">
-  <img src="" alt="" />
-  Name
-  Price
-  Quantity
 
+  <ul ng-controller="ConsumerController">
+    <li>
+      <span>Image</span>
+      <span>Name</span>
+      <span>Price</span>
+      <span>Quantity</span>
+    </li>
+    <li ng-repeat="product in a2z.products">
+      <span>{{product.img}}</span>
+      <span>{{product.name}}</span>
+      <span>{{product.price | currency}}</span>
+      <span>{{product.qty}}</span>
+    </li>
+  </ul>
 
-  {{total}}
-  ____________
-
-  Total
 </div>

@@ -1,48 +1,8 @@
 {
   "products": [
-    {
-      "name": "Letter A",
-      "price": 1.99,
-      "description": "The first letter",
-      "img": "A",
-      "id": 1
-    },
-    {
-      "name": "Letter B",
-      "price": 5.44,
-      "description": "Second letter",
-      "img": "B",
-      "id": 2
-    },
-    {
-      "name": "Letter C",
-      "price": 1.33,
-      "description": "Third guy",
-      "img": "C",
-      "id": 3
-    }
   ],
   "checkout": [
-    {
-      "name": "Letter A",
-      "price": 1.99,
-      "description": "The first letter",
-      "img": "A",
-      "id": 1
-    },
-    {
-      "name": "Letter B",
-      "price": 5.44,
-      "description": "Second letter",
-      "img": "B",
-      "id": 2
-    },
-    {
-      "name": "Letter C",
-      "price": 1.33,
-      "description": "Third guy",
-      "img": "C",
-      "id": 3
-    }
+  ],
+  "details": [
   ]
 }

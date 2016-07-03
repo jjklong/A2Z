@@ -3,6 +3,7 @@
   <ul>
     <li ng-repeat="product in a2z.products">
       {{product.name}}
+      [<a href ng-click="removeItem($index)">X</a>]
     </li>
   </ul>
   <br>

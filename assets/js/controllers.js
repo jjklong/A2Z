@@ -49,7 +49,6 @@ app.controller('AdminController', function($scope, $http){
 });
 
 
-
 //CONSUMER CONTROLLER
 app.controller('ConsumerController', function ($scope, $http){
 //cartAZ adds product to cart
@@ -68,6 +67,14 @@ app.controller('ConsumerController', function ($scope, $http){
       }).success(function success(product){
         console.log(product);     //logs object{ID} when ADD TO CART is clicked
       });
+      $scope.removeCartItem = function (index) {
+          $http({
+            method:'DELETE',
+            url:'http://localhost:3002/products/' + (index+1)
+          }).success(function(){
+            $scope.a2z.products.splice((index), 1);
+          });
+        };
     });
   };
 
@@ -87,3 +94,31 @@ app.controller('ConsumerController', function ($scope, $http){
     });
   };
 });
+
+app.controller('ConsumerController', function ($scope){
+    $scope.count = 0;
+    // console.log(count);
+});
+
+//
+//   $scope.addItem = function() {
+//       $scope.invoice.cart.push({ // add items to the array of items
+//           qty: 1,   // will add 1 item at a time
+//           description: '',
+//           cost: 0
+//       });
+//   },
+//
+//   $scope.removeItem = function(index) {     // delete function
+//       $scope.invoice.cart.splice(index, 1);  // .splice takes part of array
+//   },
+//
+//   $scope.total = function() {
+//     var total = 0;
+//     angular.forEach($scope.invoice.cart, function(cart) { // .forEach is the same as .each in jQuery
+//         total += cart.qty * cart.price;
+//     });
+//
+//     return total;
+//   };
+// });

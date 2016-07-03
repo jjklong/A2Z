@@ -1,27 +1,35 @@
 <div class="consumerContainer">
+
     <nav class="main-nav sidebar" id="main-nav">
       <h1 id="logo">A2Z</h1>
 
         <ul class="categories">
+          <!-- <input id="search" type="text" placeholder="search..." search> -->
           <a href="#"><li>Vowels</li></a>
           <a href="#"><li>Consonants</li></a>
           <a href="#"><li>Numbers</li></a>
         </ul>
 
       <div class="cart">
-        <p>Cart</p>
+        <p>CART</p>
 
         <ul>
           <li ng-repeat="cart in a2z.checkout">
+            <button class="xBtn" type="button" name="button" ng-click="removeItem($index)">X</button>
+            {{cart.qty}} -
             {{cart.name}}
             {{cart.price | currency}}
           </li>
         </ul>
-
-        <a href="#/checkout"><button type="button" name="button">Checkout</button></a>
       </div>
-      <br>
-      <a href="#/consumer">back</a>
+
+      <a href="#/checkout"><button class="checkoutBtn" type="button" name="button">
+        {{cart.qty * cart.price | currency}}
+        {{total() | currency}}
+        | <i class="fa fa-cart-arrow-down fa-lg" aria-hidden="true"></i> Checkout</button></a>
+
+
+      <br><a href="#/consumer">back</a>
     </nav>
   </div>
 

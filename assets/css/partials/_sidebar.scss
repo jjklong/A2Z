@@ -188,14 +188,21 @@
 
 
   .cart{
+    position: relative;
+    bottom: 10px;
+    left: 0;
     background: $white;
     border: 2px solid $white;
     // opacity: 0.5;
-    border-radius: 6px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     width: 85%;
-    height:8em;
+    height: 20%;
     overflow: scroll;
-    margin: 0 1em 1em 1em;
+    margin-left: auto;
+    margin-right: 26px;
     padding: 1em;
     color: $blue;
     text-align: left;
@@ -234,16 +241,11 @@
     .dashboard{
       color: $white;
     }
-    .categories{
+    a{
       padding: 3em 0 4em 1em;
-      font-family: $display-font;
-      font-size: 16px;
-      line-height: 1.5em;
-      text-align: left;
-      // text-transform: uppercase;
-      a{
-        color: #FFF;
-      }
+      font-size: 12px;
+      color: $white;
+    }
       a:hover{
-        color: $purple;
-      } } } }
+        color: $red;
+      } } }

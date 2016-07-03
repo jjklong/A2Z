@@ -5,7 +5,7 @@
     <h1 class="dashboard">checkout</h1>
 
     <br>
-    <a href="#/consumer">back</a>
+    <a href="#/consumer"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> Back to shop</a>
   </div>
 
 </div>
@@ -14,10 +14,47 @@
 <div class="receipt">
   <ul class="receiptGrid" ng-controller="ConsumerController">
     <li class="itemGrid" ng-repeat="product in a2z.checkout">
-      <span class="a">{{product.img}}</span>
+      <h3>{{product.img}}</h3>:
       <h3>{{product.name}}</h3>
       <h3>{{product.price | currency}}</h3>
-      <h3>{{product.qty}}</h3>
+      <h3>- {{product.qty}}</h3><br>
+      <button class="addBtn" type="button" name="button" ng-click="count = count + 1"><i class="fa fa-plus" aria-hidden="true"></i></button>
+      <button class="rmvBtn" type="button" name="button" ng-click="count = count - 1"><i class="fa fa-minus" aria-hidden="true"></i></button>
+      <button class="rmvBtn" type="button" name="button" ng-click="removeCartItem($index)">Remove</button>
     </li>
+
+    <a href="#/checkout"><button class="totalBtn" type="button" name="button">
+      Total | {{count}}
+      {{cart.qty * cart.price | currency}}
+      {{total() | currency}}</button></a>
   </ul>
 </div>
+
+
+<!-- --- -->
+
+   <table class="table">
+       <tr>
+
+           <th>Description</th>
+           <th>Qty</th>
+           <th>Cost</th>
+           <th>Total</th>
+           <th></th>
+       </tr>
+       <tr ng-repeat="item in invoice.items">
+           <td><input type="text" ng-model="item.description"class="input-small"></td>
+           <td><input type="number" ng-model="item.qty" ng-required class="input-mini"></td>
+           <td><input type="number" ng-model="item.cost" ng-required class="input-mini"></td>
+           <td>{{item.qty * item.cost | currency}}</td>
+           <td>
+               [<a href ng-click="removeItem($index)">X</a>]
+           </td>
+       </tr>
+       <tr>
+           <td><a href ng-click="addItem()" class="btn btn-small">add item</a></td>
+           <td></td>
+           <td>Total:</td>
+           <td>{{total() | currency}}</td>
+       </tr>
+   </table>

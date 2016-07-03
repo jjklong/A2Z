@@ -103,6 +103,14 @@ table {
       width: 44.44444%;
       float: left;
       margin-right: 11.11111%; }
+    .adminContainer .adminGrid .productImage {
+      width: 23.07692%;
+      float: left;
+      margin-right: 2.5641%; }
+    .adminContainer .adminGrid .productDetails {
+      width: 23.07692%;
+      float: left;
+      margin-right: 2.5641%; }
 
 button {
   background: #3366B1;
@@ -171,6 +179,8 @@ button:focus {
     text-align: left;
     letter-spacing: 1px; }
     .consumerContainer .sidebar .cart p {
+      padding-bottom: 10px; }
+    .consumerContainer .sidebar .cart li {
       padding-bottom: 20px; }
 
 .adminContainer .sidebar {

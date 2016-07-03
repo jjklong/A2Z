@@ -1,11 +1,31 @@
 {
   "products": [
-
+    {
+      "name": "asdf",
+      "price": 9.99,
+      "description": "sdfsdf",
+      "img": "sdfsd",
+      "qty": 1,
+      "id": 1
+    },
+    {
+      "name": "H",
+      "price": 8.99,
+      "description": "ljl",
+      "img": "A",
+      "qty": 1,
+      "id": 2
+    }
   ],
   "checkout": [
-
+    {
+      "name": "asdf",
+      "price": 9.99,
+      "description": "sdfsdf",
+      "img": "sdfsd",
+      "qty": 1,
+      "id": 1
+    }
   ],
-  "details": [
-  
-  ]
+  "details": []
 }

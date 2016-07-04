@@ -1,30 +1,39 @@
 <div class="consumerContainer">
-  <div class="sidebar">
-    <a href="#/consumer"><h1 id="logo">A2Z</h1></a>
-    <!-- <input id="search" type="search" placeholder="search..."> -->
-    <ul class="categories">
-      <a href="#"><li>Vowels</li></a>
-      <a href="#"><li>Consonants</li></a>
-      <a href="#"><li>Numbers</li></a>
-    </ul>
-    <div class="cart">
-      <p>Cart</p>
-      <a href="#/checkout"><button type="button" name="button">Checkout</button></a>
-    </div>
-    <br>
-    <a href="#/consumer">back</a>
+    <nav class="main-nav sidebar" id="main-nav">
+      <h1 id="logo">A2Z</h1>
+
+        <ul class="categories">
+          <a href="#"><li>Vowels</li></a>
+          <a href="#"><li>Consonants</li></a>
+          <a href="#"><li>Numbers</li></a>
+        </ul>
+
+      <div class="cart">
+        <p>Cart</p>
+
+        <ul>
+          <li ng-repeat="cart in a2z.checkout">
+            {{cart.name}}
+            {{cart.price | currency}}
+          </li>
+        </ul>
+
+        <a href="#/checkout"><button type="button" name="button">Checkout</button></a>
+      </div>
+      <br>
+      <a href="#/consumer">back</a>
+    </nav>
   </div>
 
-  <div class="consumerGrid">
-
+  <div class="consumerGrid" ng-repeat="product in a2z.details">
+    <a ng-link="[\'product\', {product.id}]">
     <div class="productImage" >
-      <span class="a">{{a2z.details.name}}</span>
-      <img src="" alt="" />
+      <span class="a">{{product.img}}</span>
     </div>
 
-    <div class="productDetails" ng-repeat="product in a2z.details">
+    <div class="productDetails" >
       <h3>{{product.name}}</h3>
-      <h5>{{product.price}}</h5>
+      <h5>{{product.price | currency}}</h5>
       <p>
         {{product.description}}
       </p>
@@ -33,44 +42,5 @@
       </p>
       <button type="button" name="button">Add to cart</button>
     </div>
+    </a>
   </div>
-</div>
-
-
-<!-- <div class="consumerContainer">
-  <div class="sidebar">
-    <a href="#/consumer"><h1 id="logo">A2Z</h1></a>
-    <input id="search" type="search" placeholder="search...">
-    <ul class="categories">
-      <a href="#"><li>Vowels</li></a>
-      <a href="#"><li>Consonants</li></a>
-      <a href="#"><li>Numbers</li></a>
-    </ul>
-    <div class="cart">
-      <p>Cart</p>
-      <a href="#/checkout"><button type="button" name="button">Checkout</button></a>
-    </div>
-    <br>
-    <a href="#/consumer">back</a>
-  </div>
-
-  <div class="consumerGrid">
-
-    <div class="productImage" >
-      <span class="a">{{a2z.details.name}}</span>
-      <img src="" alt="" />
-    </div>
-
-    <div class="productDetails" ng-repeat="product in a2z.details">
-      <h3>{{product.name}}</h3>
-      <h5>{{product.price}}</h5>
-      <p>
-        {{product.description}}
-      </p>
-      <p>
-        {{product.reviews}}
-      </p>
-      <button type="button" name="button">Add to cart</button>
-    </div>
-  </div>
-</div> -->

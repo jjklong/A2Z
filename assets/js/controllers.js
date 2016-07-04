@@ -77,6 +77,7 @@ app.controller('ConsumerController', function ($scope, $http){
       url: 'http://localhost:3002/products/' + product
     }).success(function(response){
       console.log(response);
+
       $http({
         method: 'POST',
         url: 'http://localhost:3002/details/',

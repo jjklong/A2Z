@@ -73,36 +73,10 @@ table {
     float: left;
     margin-right: 2.5641%; }
     .consumerContainer .consumerGrid .itemGrid {
-      width: 31.03448%;
+      width: 100%;
       float: left;
-      margin-right: 3.44828%; }
-    .consumerContainer .consumerGrid .productImage {
-      width: 35.89744%;
-      float: left;
-      margin-right: 2.5641%; }
-    .consumerContainer .consumerGrid .productDetails {
-      width: 35.89744%;
-      float: left;
-      margin-right: 2.5641%; }
-
-.adminContainer {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0; }
-  .adminContainer .sidebar {
-    width: 10.25641%;
-    float: left;
-    margin-right: 2.5641%;
-    margin: 0; }
-  .adminContainer .adminGrid {
-    width: 23.07692%;
-    float: left;
-    margin-right: 2.5641%; }
-    .adminContainer .adminGrid .itemGrid {
-      width: 44.44444%;
-      float: left;
-      margin-right: 11.11111%; }
+      margin-left: 0;
+      margin-right: 0; }
 
 button {
   background: #3366B1;
@@ -122,11 +96,125 @@ button:hover {
 button:focus {
   outline: 0; }
 
-.sidebar button:hover {
+.submitBtn {
+  background: #3366B1;
+  border: 2px solid #3366B1;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.submitBtn:hover {
+  background: #FFF;
+  border: 2px solid #3366B1;
+  border-radius: 5px;
+  color: #3366B1; }
+
+.editBtn {
+  background: #2D7D8F;
+  border: 2px solid #2D7D8F;
+  border-radius: 5px; }
+
+.editBtn:hover {
+  background: #FFF;
+  border: 2px solid #2D7D8F;
+  border-radius: 5px;
+  color: #2D7D8F; }
+
+.removeBtn {
+  background: #FA5555;
+  border: 2px solid #FA5555;
+  border-radius: 5px; }
+
+.removeBtn:hover {
+  background: #FFF;
+  border: 2px solid #FA5555;
+  border-radius: 5px;
+  color: #FA5555; }
+
+.checkoutBtn {
+  background: #FA5555;
+  border: 2px solid #FA5555;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 85%;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.checkoutBtn:hover {
+  background: #3366B1;
+  border: 2px solid #FA5555;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #FA5555; }
+
+.totalBtn {
+  background: #3366B1;
+  border: 2px solid #3366B1;
+  border-radius: 5px;
+  width: 97%;
+  margin-left: 1em;
+  padding: 10px;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.totalBtn:hover {
   background: #DDDDDD;
   border: 2px solid #3366B1;
-  border-radius: 20px;
+  border-radius: 5px;
   color: #3366B1; }
+
+.xBtn {
+  background: #FA5555;
+  border: 2px solid #FA5555;
+  border-radius: 5px;
+  padding: 2px; }
+
+.xBtn:hover {
+  background: #FFF;
+  border: 2px solid #FA5555;
+  border-radius: 5px;
+  color: #FA5555;
+  padding: 2px; }
+
+.addBtn {
+  background: #2D7D8F;
+  border: 2px solid #2D7D8F;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 4px; }
+
+.addBtn:hover {
+  background: #FFF;
+  border: 2px solid #2D7D8F;
+  border-radius: 5px;
+  color: #2D7D8F; }
+
+.rmvBtn {
+  background: #FA5555;
+  border: 2px solid #FA5555;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 4px; }
+
+.rmvBtn:hover {
+  background: #FFF;
+  border: 2px solid #FA5555;
+  border-radius: 5px;
+  color: #FA5555; }
 
 .consumerContainer .sidebar {
   position: fixed;
@@ -150,6 +238,11 @@ button:focus {
     font-size: 10em;
     text-align: center;
     letter-spacing: -20px; }
+  .consumerContainer .sidebar .dashboard {
+    padding: 0 0 14em 1em;
+    font-size: 14px;
+    color: #DDDDDD;
+    text-transform: uppercase; }
   .consumerContainer .sidebar .categories {
     padding: 3em 0 4em 1em;
     font-family: "Slabo 27px", serif;
@@ -161,17 +254,28 @@ button:focus {
     .consumerContainer .sidebar .categories a:hover {
       color: #FA5555; }
   .consumerContainer .sidebar .cart {
+    position: relative;
+    bottom: 10px;
+    left: 0;
     background: #DDDDDD;
     border: 2px solid #DDDDDD;
-    border-radius: 6px;
-    height: 8em;
-    margin: 0 2em 1em 2em;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 85%;
+    height: 20%;
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: 26px;
     padding: 1em;
     color: #3366B1;
     text-align: left;
     letter-spacing: 1px; }
     .consumerContainer .sidebar .cart p {
-      padding-bottom: 20px; }
+      padding-bottom: 10px; }
+    .consumerContainer .sidebar .cart li {
+      padding-bottom: 5px; }
 
 .adminContainer .sidebar {
   position: fixed;
@@ -197,26 +301,12 @@ button:focus {
     letter-spacing: -5px; }
   .adminContainer .sidebar .dashboard {
     color: #DDDDDD; }
-  .adminContainer .sidebar .categories {
+  .adminContainer .sidebar a {
     padding: 3em 0 4em 1em;
-    font-family: "Slabo 27px", serif;
-    font-size: 16px;
-    line-height: 1.5em;
-    text-align: left; }
-    .adminContainer .sidebar .categories a {
-      color: #FFF; }
-    .adminContainer .sidebar .categories a:hover {
-      color: #3a4ed5; }
-  .adminContainer .sidebar .cart {
-    background: #DDDDDD;
-    border: 2px solid #DDDDDD;
-    border-radius: 6px;
-    height: 8em;
-    margin: 0 2em 1em 2em;
-    padding: 2em;
-    color: #3a4ed5;
-    text-align: left;
-    letter-spacing: 1px; }
+    font-size: 12px;
+    color: #DDDDDD; }
+  .adminContainer .sidebar a:hover {
+    color: #FA5555; }
 
 body {
   background: #DDDDDD;
@@ -280,7 +370,9 @@ a:hover {
   text-decoration: none; }
 
 form {
+  position: relative;
   width: 70%;
+  display: inline-block;
   margin-top: 5%;
   padding-left: 15%; }
 
@@ -291,7 +383,7 @@ input {
   margin: 5px;
   padding: 5px;
   font-family: "Work Sans", sans-serif;
-  font-size: 1em; }
+  font-size: 14px; }
   input .desc {
     height: 20%; }
 
@@ -299,32 +391,23 @@ input {
   position: relative;
   top: 0;
   left: 160px;
-  width: 80%;
-  padding: 5em 3em 1em 4em;
+  padding: 5em 3em 1em 20em;
   margin: 0; }
   .adminGrid .itemGrid {
     background: #FFF;
     border: 2px solid #FFF;
     border-radius: 5px;
+    width: 15em;
     margin: 1em;
-    padding: 2em;
-    text-align: left; }
+    padding: 1em;
+    text-align: center;
+    display: inline-block; }
     .adminGrid .itemGrid span {
       font-family: "Slabo 27px", serif;
       font-size: 4em;
       color: #393E46; }
-    .adminGrid .itemGrid .a:hover {
-      color: #E42F45; }
-    .adminGrid .itemGrid .eight:hover {
-      color: #189dcc; }
-    .adminGrid .itemGrid .f:hover {
-      color: #D5441C; }
-    .adminGrid .itemGrid .three:hover {
-      color: #7ebf35; }
-    .adminGrid .itemGrid .c:hover {
-      color: #35b9bf; }
-    .adminGrid .itemGrid .y:hover {
-      color: #FDEA2E; }
+    .adminGrid .itemGrid span:hover {
+      color: #FA5555; }
     .adminGrid .itemGrid h3 {
       padding: 4px;
       color: #2D7D8F;
@@ -332,24 +415,6 @@ input {
       display: inline-block; }
     .adminGrid .itemGrid button {
       margin-left: 4em; }
-
-.submit {
-  background: #3366B1;
-  border: 2px solid #3366B1;
-  border-radius: 5px;
-  padding: 10px;
-  color: #FFF;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
-
-.submit:hover {
-  background: #FFF;
-  border: 2px solid #3366B1;
-  border-radius: 5px;
-  color: #3366B1; }
-
-.submit:focus {
-  outline: 0; }
 
 body {
   background: #DDDDDD;
@@ -369,6 +434,7 @@ a:hover {
   position: relative;
   top: 0;
   left: 160px;
+  width: 100%;
   padding: 5em 3em 1em 20em;
   margin: 0; }
   .consumerGrid .itemGrid {
@@ -376,7 +442,7 @@ a:hover {
     border: 2px solid #FFF;
     border-radius: 5px;
     width: 15em;
-    margin: 2em;
+    margin: 1em;
     padding: 1em;
     text-align: center;
     display: inline-block; }
@@ -385,7 +451,7 @@ a:hover {
       font-size: 10em;
       color: #393E46; }
     .consumerGrid .itemGrid .a:hover {
-      color: #E42F45; }
+      color: #FA5555; }
     .consumerGrid .itemGrid .eight:hover {
       color: #189dcc; }
     .consumerGrid .itemGrid .f:hover {
@@ -439,7 +505,7 @@ a:hover {
       font-family: "Slabo 27px", serif;
       font-size: 16em; }
     .consumerGrid .productImage .a {
-      color: #E42F45; }
+      color: #FA5555; }
   .consumerGrid .productDetails {
     margin-top: 2em; }
     .consumerGrid .productDetails h3 {
@@ -490,9 +556,9 @@ a:hover {
   .receiptGrid .itemGrid {
     background: #FFF;
     border: 2px solid #FFF;
-    border-radius: 5px;
+    border-radius: 4px;
     margin: 1em;
-    padding: 2em;
+    padding: 1em;
     text-align: left; }
     .receiptGrid .itemGrid span {
       font-family: "Slabo 27px", serif;

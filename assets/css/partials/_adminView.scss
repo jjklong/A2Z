@@ -44,12 +44,10 @@ input{
     border: 2px solid #FFF;
     border-radius: 5px;
     width: 15em;
-    // height: 18em;
     margin: 1em;
     padding: 1em;
     text-align: center;
     display: inline-block;
-
 
     span{
       font-family: $display-font;
@@ -61,8 +59,6 @@ input{
       }
 
     h3{
-      // background: $teal;
-      // margin: 0 5px 0 5px;
       padding: 4px;
       color: $teal;
       letter-spacing: 1px;

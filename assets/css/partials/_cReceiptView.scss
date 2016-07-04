@@ -29,7 +29,6 @@ a:hover{
     margin: 1em;
     padding: 1em;
     text-align: left;
-    // display: block;
 
     span{
       font-family: $display-font;
@@ -56,22 +55,11 @@ a:hover{
       }
 
     h3{
-      // background: $teal;
-      // margin: 0 5px 0 5px;
       padding: 4px;
       color: $teal;
       letter-spacing: 1px;
       display: inline-block;
     }
-    // h5{
-    //   // background: $teal;
-    //   // margin: 0 5px 0 5px;
-    //   padding-bottom: 8px;
-    //   font-family: $display-font;
-    //   color: $teal;
-    //   // font-style: italic;
-    //   letter-spacing: 2px;
-    // }
     button{
       margin-left: 4em;
     } } }

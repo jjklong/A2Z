@@ -27,7 +27,6 @@ a:hover{
     border: 2px solid #FFF;
     border-radius: 5px;
     width: 15em;
-    // height: 18em;
     margin: 1em;
     padding: 1em;
     text-align: center;
@@ -39,7 +38,7 @@ a:hover{
       color: $dark-grey;
     }
       .a:hover{
-        color: #E42F45;
+        color: $red; //#E42F45
       }
       .eight:hover{
         color: #189dcc;
@@ -58,18 +57,13 @@ a:hover{
       }
 
     h3{
-      // background: $teal;
-      // margin: 0 5px 0 5px;
       padding: 4px;
       color: $teal;
       letter-spacing: 1px;
     }
     h5{
-      // background: $teal;
-      // margin: 0 5px 0 5px;
       padding-bottom: 8px;
       font-family: $display-font;
       color: $teal;
-      // font-style: italic;
       letter-spacing: 2px;
     } } }

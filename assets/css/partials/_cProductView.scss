@@ -37,7 +37,7 @@ a:hover{
     font-size: 16em;
   }
     .a{
-      color: #E42F45;
+      color: $red;
     }
   }
 
@@ -51,7 +51,6 @@ a:hover{
   h5{
     font-family: $display-font;
     color: $teal;
-    // font-style: italic;
     letter-spacing: 2px;
   }
   button{

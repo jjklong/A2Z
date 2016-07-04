@@ -11,6 +11,7 @@ app.controller('AzController', function($scope, $http){
   });
 });
 
+//$window.location.reload()// $route.reload();  (have $route in controller)
 
 //ADMIN CONTROLLER
 app.controller('AdminController', function($scope, $http){
@@ -72,7 +73,7 @@ app.controller('ConsumerController', function ($scope, $http){
             method:'DELETE',
             url:'http://localhost:3002/products/' + (index+1)
           }).success(function(){
-            $scope.a2z.products.splice((index), 1);
+            $scope.a2z.checkout.splice((index), 1);
           });
         };
     });
@@ -95,8 +96,23 @@ app.controller('ConsumerController', function ($scope, $http){
   };
 });
 
+
+
+
+//
+//     $scope.total = function() {
+//         var total = 0;
+//         angular.forEach($scope.invoice.items, function(item) { // .forEach is the same as .each in jQuery
+//             total += item.qty * item.cost;
+//         });
+//
+//         return total;
+//     }
+// });
+// })();
+
 app.controller('ConsumerController', function ($scope){
-    $scope.count = 0;
+    $scope.count = 0;       // to keep track of add/removed items on receipt
     // console.log(count);
 });
 

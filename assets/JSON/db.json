@@ -15,6 +15,14 @@
       "img": "B",
       "qty": 1,
       "id": 2
+    },
+    {
+      "name": "Letter D",
+      "price": 13.49,
+      "description": "Do you like dogs? Better get the letter 'D' in case you need to reference your dog.",
+      "img": "D",
+      "qty": 1,
+      "id": 3
     }
   ],
   "checkout": [
@@ -33,6 +41,14 @@
       "img": "B",
       "qty": 1,
       "id": 2
+    },
+    {
+      "name": "Letter D",
+      "price": 13.49,
+      "description": "Do you like dogs? Better get the letter 'D' in case you need to reference your dog.",
+      "img": "D",
+      "qty": 1,
+      "id": 3
     }
   ],
   "details": [
@@ -43,14 +59,6 @@
       "img": "A",
       "qty": 1,
       "id": 1
-    },
-    {
-      "name": "B",
-      "price": 2.99,
-      "description": "second letter",
-      "img": "B",
-      "qty": 1,
-      "id": 2
     }
   ]
 }

@@ -25,16 +25,15 @@
     </nav>
   </div>
 
-  <div class="consumerGrid">
-
+  <div class="consumerGrid" ng-repeat="product in a2z.details">
+    <a ng-link="[\'product\', {product.id}]">
     <div class="productImage" >
-      <span class="a">{{a2z.details.name}}</span>
-      <img src="" alt="" />
+      <span class="a">{{product.img}}</span>
     </div>
 
-    <div class="productDetails" ng-repeat="product in a2z.details">
+    <div class="productDetails" >
       <h3>{{product.name}}</h3>
-      <h5>{{product.price}}</h5>
+      <h5>{{product.price | currency}}</h5>
       <p>
         {{product.description}}
       </p>
@@ -43,5 +42,5 @@
       </p>
       <button type="button" name="button">Add to cart</button>
     </div>
+    </a>
   </div>
-</div>

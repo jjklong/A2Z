@@ -30,6 +30,7 @@
 
   <ul class="sieve consumerGrid">
     <li class="itemGrid" ng-repeat="product in a2z.products">
+      <!-- <a ng-link="[\'consumer\', {id: $product.id}]"> -->
       <a href="#/product" ng-click="viewAZ(product.id)">
         <span class="a">{{product.img}}</span>
         <h3>{{product.name}}</h3>

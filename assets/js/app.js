@@ -13,8 +13,9 @@ app.config(function($routeProvider){
       templateUrl: 'pages/consumerView.html',
       controller: 'ConsumerController'
     })
-    .when('/product/',{
-      templateUrl: 'pages/cProductView.html'
+    .when('/product',{
+      templateUrl: 'pages/cProductView.html',
+      controller: 'ConsumerController'
     })
     .when('/checkout',{
       templateUrl: 'pages/cReceiptView.html'

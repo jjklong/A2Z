@@ -1,27 +1,8 @@
 button{
   background: $blue;
   border: 2px solid $blue;
-  border-radius: 20px; //20px
-    // border-color: -webkit-linear-gradient(45deg, $teal , $green); /* For Safari 5.1 to 6.0 */
-    // border-color: -o-linear-gradient(45deg, $teal, $green); /* For Opera 11.1 to 12.0 */
-    // border-color: -moz-linear-gradient(45deg, $teal, $green); /* For Firefox 3.6 to 15 */
-    // border-color: linear-gradient(45deg, $teal , $green); /* Standard syntax */
-
-    // border-width: 3px;
-    // border-style: solid;
-    // -webkit-border-image:
-    //   -webkit-gradient(linear, 0 0, 0 100%, from($teal), to(rgba(0, 0, 0, 0))) 1 100%;
-    // -webkit-border-image:
-    //   -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-    // -moz-border-image:
-    //   -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-    // -o-border-image:
-    //   -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-    // border-image:
-    //   linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
-
-    // margin: 0 5px 0 5px;
-  padding: 10px; //10px
+  border-radius: 20px;
+  padding: 10px;
   color: #FFF;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -36,13 +17,132 @@ button:focus {
   outline: 0;
 }
 
-.sidebar{
-  button{
-    // margin: 16px 5px 0 80px;
+.submitBtn{
+  background: $blue;
+  border: 2px solid $blue;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+  .submitBtn:hover{
+    background: #FFF;
+    border: 2px solid $blue;
+    border-radius: 5px;
+    color: $blue;
   }
-  button:hover{
+
+  .editBtn{
+    background: $teal;
+    border: 2px solid $teal;
+    border-radius: 5px;
+  }
+  .editBtn:hover{
+    background: #FFF;
+    border: 2px solid $teal;
+    border-radius: 5px;
+    color: $teal;
+  }
+
+.removeBtn{
+  background: $red;
+  border: 2px solid $red;
+  border-radius: 5px;
+}
+.removeBtn:hover{
+  background: #FFF;
+  border: 2px solid $red;
+  border-radius: 5px;
+  color: $red;
+}
+
+
+.checkoutBtn{
+  background: $red;
+  border: 2px solid $red;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 85%;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+  .checkoutBtn:hover{
+    background: $blue;
+    border: 2px solid $red;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: $red;
+  }
+
+  .totalBtn{
+    background: $blue;
+    border: 2px solid $blue;
+    border-radius: 5px;
+    width: 97%;
+    margin-left: 1em;
+    padding: 10px;
+    color: #FFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .totalBtn:hover{
     background: $white;
     border: 2px solid $blue;
-    border-radius: 20px;
+    border-radius: 5px;
     color: $blue;
-} }
+  }
+
+
+.xBtn{
+  background: $red;
+  border: 2px solid $red;
+  border-radius: 5px;
+  padding: 2px;
+}
+.xBtn:hover{
+  background: #FFF;
+  border: 2px solid $red;
+  border-radius: 5px;
+  color: $red;
+  padding: 2px;
+}
+
+.addBtn{
+  background: $teal;
+  border: 2px solid $teal;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 4px;
+}
+.addBtn:hover{
+  background: #FFF;
+  border: 2px solid $teal;
+  border-radius: 5px;
+  color: $teal;
+}
+
+.rmvBtn{
+  background: $red;
+  border: 2px solid $red;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 4px;
+}
+.rmvBtn:hover{
+  background: #FFF;
+  border: 2px solid $red;
+  border-radius: 5px;
+  color: $red;
+}

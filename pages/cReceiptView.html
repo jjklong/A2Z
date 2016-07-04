@@ -5,19 +5,26 @@
     <h1 class="dashboard">checkout</h1>
 
     <br>
-    <a href="#/consumer">back</a>
+    <a href="#/consumer"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> Back to shop</a>
   </div>
-
 </div>
 
 
 <div class="receipt">
   <ul class="receiptGrid" ng-controller="ConsumerController">
     <li class="itemGrid" ng-repeat="product in a2z.checkout">
-      <span class="a">{{product.img}}</span>
+      <h3>{{product.img}}</h3>:
       <h3>{{product.name}}</h3>
       <h3>{{product.price | currency}}</h3>
-      <h3>{{product.qty}}</h3>
+      <h3>- {{product.qty}}</h3><br>
+      <button class="addBtn" type="button" name="button" ng-click="count = count + 1"><i class="fa fa-plus" aria-hidden="true"></i></button>
+      <button class="rmvBtn" type="button" name="button" ng-click="count = count - 1"><i class="fa fa-minus" aria-hidden="true"></i></button>
+      <button class="rmvBtn" type="button" name="button" ng-click="removeCartItem($index)">Remove</button>
     </li>
+
+    <a href="#/checkout"><button class="totalBtn" type="button" name="button">
+      Total | {{count}}
+      {{cart.qty * cart.price | currency}}
+      {{total() | currency}}</button></a>
   </ul>
 </div>

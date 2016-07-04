@@ -1,32 +1,38 @@
 <div class="consumerContainer">
-    <nav class="main-nav sidebar" id="main-nav">
+  <nav class="main-nav sidebar" id="main-nav">
       <h1 id="logo">A2Z</h1>
+      <h1 class="dashboard">One stop shop for<br>
+      Vowels, Consonants, Numbers</h1>
 
-        <ul class="categories">
-          <a href="#"><li>Vowels</li></a>
-          <a href="#"><li>Consonants</li></a>
-          <a href="#"><li>Numbers</li></a>
-        </ul>
+      <!-- <ul class="categories"> -->
+        <!-- <input id="search" type="text" placeholder="search..." search> -->
+        <!-- <a href="#"><li>Vowels</li></a>
+        <a href="#"><li>Consonants</li></a>
+        <a href="#"><li>Numbers</li></a>
+      </ul> -->
 
-      <div class="cart">
-        <p>Cart</p>
+    <div class="cart">
+      <p>CART</p>
+      <ul>
+        <li ng-repeat="cart in a2z.checkout">
+          <button class="xBtn" type="button" name="button" ng-click="removeItem($index)">X</button>
+          {{cart.qty}} -
+          {{cart.name}}
+          {{cart.price | currency}}
+        </li>
+      </ul>
+    </div>
 
-        <ul>
-          <li ng-repeat="cart in a2z.checkout">
-            {{cart.name}}
-            {{cart.price | currency}}
-          </li>
-        </ul>
+    <a href="#/checkout"><button class="checkoutBtn" type="button" name="button">
+      <!-- {{cart.qty * cart.price | currency}} -->
+      {{total() | currency}}
+      | <i class="fa fa-cart-arrow-down fa-lg" aria-hidden="true"></i> Checkout</button></a>
 
-        <a href="#/checkout"><button type="button" name="button">Checkout</button></a>
-      </div>
-      <br>
-      <a href="#/consumer">back</a>
-    </nav>
+    <br><a href="#/consumer" class="dashboard"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i> back to shop</a>
+  </nav>
   </div>
 
   <div class="consumerGrid">
-
     <div class="productImage" >
       <span class="a">{{a2z.details.name}}</span>
       <img src="" alt="" />

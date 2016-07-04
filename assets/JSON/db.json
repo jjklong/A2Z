@@ -1,5 +1,127 @@
 {
-  "products": [],
-  "checkout": [],
+  "products": [
+    {
+      "name": "A",
+      "price": 38.98,
+      "description": "A's all around",
+      "img": "A",
+      "qty": 1,
+      "id": 1
+    },
+    {
+      "name": "Letter B",
+      "price": 37.88,
+      "description": "What a magnificent letter!",
+      "img": "B",
+      "qty": 1,
+      "id": 2
+    },
+    {
+      "name": "C",
+      "price": 37.88,
+      "description": "Low price for low curves",
+      "img": "C",
+      "qty": 1,
+      "id": 3
+    },
+    {
+      "name": "Letter D",
+      "price": 378.88,
+      "description": "Rare and expensive",
+      "img": "D",
+      "qty": 1,
+      "id": 4
+    },
+    {
+      "name": "E",
+      "price": 1.88,
+      "description": "Cheap cheap cheap",
+      "img": "E",
+      "qty": 1,
+      "id": 5
+    },
+    {
+      "name": "F",
+      "price": 38.77,
+      "description": "This letter!",
+      "img": "F",
+      "qty": 1,
+      "id": 6
+    },
+    {
+      "name": "G",
+      "price": 47.88,
+      "description": "EH...",
+      "img": "G",
+      "qty": 1,
+      "id": 7
+    },
+    {
+      "name": "H",
+      "price": 38.99,
+      "description": "Hhhhh",
+      "img": "H",
+      "qty": 1,
+      "id": 8
+    },
+    {
+      "name": "Vowel",
+      "price": 298.99,
+      "description": "Expensive letter I",
+      "img": "I",
+      "qty": 1,
+      "id": 9
+    }
+  ],
+  "checkout": [
+    {
+      "name": "F",
+      "price": 38.77,
+      "description": "This letter!",
+      "img": "F",
+      "qty": 1,
+      "id": 6
+    },
+    {
+      "name": "G",
+      "price": 47.88,
+      "description": "EH...",
+      "img": "G",
+      "qty": 1,
+      "id": 7
+    },
+    {
+      "name": "A",
+      "price": 38.98,
+      "description": "A's all around",
+      "img": "A",
+      "qty": 5,
+      "id": 1
+    },
+    {
+      "name": "Letter B",
+      "price": 37.88,
+      "description": "What a magnificent letter!",
+      "img": "B",
+      "qty": 1,
+      "id": 2
+    },
+    {
+      "name": "H",
+      "price": 38.99,
+      "description": "Hhhhh",
+      "img": "H",
+      "qty": 1,
+      "id": 8
+    },
+    {
+      "name": "Vowel",
+      "price": 298.99,
+      "description": "Expensive letter I",
+      "img": "I",
+      "qty": 2,
+      "id": 9
+    }
+  ],
   "details": []
 }

@@ -22,8 +22,6 @@ $display-font: 'Slabo 27px', serif;
 $font: 'Work Sans', sans-serif;  // 400 or 900 weights
 
 
-// @import "grid";
-
 $susy: (
   columns: 8,
   container: 100%,
@@ -48,44 +46,8 @@ $susy: (
     @include span(6 of 8);
 
     .itemGrid{
-      @include span(2 of 6);
-    }
-
-    .productImage{
-      @include span(3);
-    }
-    .productDetails{
-      @include span(3);
-    } } }
-
-
-
-    .adminContainer{
-      @include span(8);
-
-      .sidebar{
-        @include span(1 of 8);
-        margin: 0;
-      }
-      .adminGrid{
-        @include span(2 of 8);
-
-        .itemGrid{
-          @include span(1 of 2);
-        }
-
-        .productImage{
-          @include span(2);
-        }
-        .productDetails{
-          @include span(2);
-        }
-      }
-    }
-
-
-
-
+      @include span(6 of 6);
+  } } }
 
 // @import "partials/hamburger-menu";
 @import "partials/buttons";

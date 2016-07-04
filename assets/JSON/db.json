@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "name": "A",
-      "price": 38.98,
-      "description": "A's all around",
+      "name": "Letter A",
+      "price": 23.44,
+      "description": "First letter",
       "img": "A",
       "qty": 1,
-      "id": 1
+      "id": 10
     },
     {
       "name": "Letter B",
@@ -120,7 +120,24 @@
       "img": "I",
       "qty": 2,
       "id": 9
+    },
+    {
+      "name": "E",
+      "price": 1.88,
+      "description": "Cheap cheap cheap",
+      "img": "E",
+      "qty": 1,
+      "id": 5
     }
   ],
-  "details": []
+  "details": [
+    {
+      "name": "Letter B",
+      "price": 37.88,
+      "description": "What a magnificent letter!",
+      "img": "B",
+      "qty": 1,
+      "id": 2
+    }
+  ]
 }

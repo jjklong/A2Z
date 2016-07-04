@@ -112,10 +112,10 @@ app.controller('ConsumerController', function ($scope, $http){
 // });
 // })();
 
-app.controller('ConsumerController', function ($scope){
-    $scope.count = 0;       // to keep track of add/removed items on receipt
-    // console.log(count);
-});
+// app.controller('ConsumerController', function ($scope){
+//     $scope.count = 0;       // to keep track of add/removed items on receipt
+//     // console.log(count);
+// });
 
 //
 //   $scope.addItem = function() {

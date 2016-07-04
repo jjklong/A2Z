@@ -370,6 +370,7 @@ a:hover {
   text-decoration: none; }
 
 form {
+  z-index: -1;
   position: relative;
   width: 70%;
   display: inline-block;
@@ -431,11 +432,10 @@ a:hover {
   text-decoration: none; }
 
 .consumerGrid {
-  position: relative;
   top: 0;
   left: 160px;
   width: 100%;
-  padding: 5em 3em 1em 20em;
+  padding: 5em 3em 1em 10em;
   margin: 0; }
   .consumerGrid .itemGrid {
     background: #FFF;

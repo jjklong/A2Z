@@ -370,7 +370,6 @@ a:hover {
   text-decoration: none; }
 
 form {
-  z-index: -1;
   position: relative;
   width: 70%;
   display: inline-block;

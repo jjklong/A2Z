@@ -13,20 +13,24 @@ a:hover{
   color: $red;
   text-decoration: none;
 }
-
-form{
-  position: relative;
-  width: 70%;
-  display: inline-block;
-  margin-top: 5%;
-  padding-left: 15%;
+.adminContainer{
+  form{
+    width: 70%;
+    display: inline-block;
+    margin-top: 5%;
+    padding-left: 15%;
+    p{
+      font-size: 1.75em;
+    }
+  }
 }
+
 input{
   border: 2px solid $grey;
   border-radius: 5px;
   width: 50%;
   margin: 5px;
-  padding: 5px;
+  padding: 1%;
   font-family: $font;
   font-size: 14px;
   .desc{

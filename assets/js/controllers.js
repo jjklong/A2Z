@@ -4,7 +4,7 @@
 app.controller('AzController', function($scope, $http){
   $http({
     method: 'GET',
-    url: 'http://localhost:3002/db'
+    url: 'https://raw.githubusercontent.com/jjklong/A2Z/master/db.json'
   }).success(function successCallback(response){
     // console.log(response);
     $scope.a2z = response;
